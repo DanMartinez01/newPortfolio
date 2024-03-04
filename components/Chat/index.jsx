@@ -49,8 +49,10 @@ function Chat({ initialMessage }) {
 
   return (
     <main>
-      <h1>Ask me any question</h1>
-      <div className="flex flex-col gap-4 m-auto border border-neutral-500/20 p-4 rounded-md mt-10">
+      <h1 className="p-2 text-3xl text-white text-center mt-10 bg-blue-500 rounded-3xl self-start rounded-bl-none">
+        Chat with me:
+      </h1>
+      <div className="flex flex-col gap-4 m-auto border border-neutral-500/20 p-4 rounded-md mt-10 ">
         <div
           ref={container}
           className="flex flex-col gap-4 h-[480px] overflow-y-auto"
