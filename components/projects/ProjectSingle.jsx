@@ -1,12 +1,16 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
+import { FaGithub } from "react-icons/fa";
+import { IoLink } from "react-icons/io5";
 
-const cardStyle = {
-  height: "300px", // Set your desired fixed height for the cards
-};
+import useThemeSwitcher from "../../hooks/useThemeSwitcher";
 
 const ProjectSingle = (props) => {
+  const technologies = props.technologies;
+
+  const [activeTheme] = useThemeSwitcher();
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -17,40 +21,53 @@ const ProjectSingle = (props) => {
         delay: 0.15,
       }}
     >
-      <Link
-        href="/projects/[id]"
-        as={`/projects/${props.id}`}
-        aria-label="Single Project"
-        passHref
-        className="flex h-full mx-auto"
+      <div
+        className="max-w-sm rounded overflow-hidden shadow-lg mx-auto  w-3/4  h-full transition-transform transform hover:scale-105 "
+        href={props.url}
+        style={{
+          border: "2px solid transparent", // Set an initial transparent border
+          transition: "border 0.3s ease-in-out", // Add transition to the border
+          boxShadow: "0 4px 8px rgba(0, 0, 0, 0.3)", // Optional: Add a subtle shadow on hover
+        }}
       >
-        <div className="max-w-sm rounded overflow-hidden shadow-lg mx-auto">
-          {/* <img className="w-full h-2/5" src={props.img} alt="Single Project" /> */}
-          <Image
-            className="w-full h-2/5"
-            src={props.img}
-            alt="Single Project"
-            width={100}
-            height={100}
-            // quality={100}
-          />
-          <div className="px-6 py-4">
-            <div className="font-bold text-xl mb-2">{props.title}</div>
-            <p className="text-gray-700 text-base">{props.category}</p>
-          </div>
-          <div className="px-6 pt-4 pb-2">
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-              #photography
-            </span>
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-              #travel
-            </span>
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-              #winter
-            </span>
-          </div>
+        {/* <img className="w-full h-2/4" src={props.img} alt="Single Project" /> */}
+        <Image
+          className="h-2/4"
+          src={props.img}
+          alt="Single Project"
+          width={400}
+          height={200}
+        />
+        <div className="px-6 py-4 flex flex-row ">
+          {activeTheme === "dark" ? (
+            <p className="text-white text-xl font-bold">{props.title}</p>
+          ) : (
+            <p className="text-black text-xl font-bold">{props.title}</p>
+          )}
         </div>
-      </Link>
+        <div className="px-6">
+          {technologies &&
+            technologies.map((item, index) => (
+              <span
+                key={index}
+                className="inline-block bg-gray-200 rounded-full px-2 py-1 text-sm font-semibold text-gray-700 mr-1"
+              >
+                {item}
+              </span>
+            ))}
+        </div>
+        <div className="flex flex-row justify-end items-center mt-10 text-gray-500">
+          <Link
+            className="mx-2 group"
+            href={"https://www.github.com/danmartinez01"}
+          >
+            <FaGithub size={20} className="group-hover:neon" />
+          </Link>
+          <Link className="mx-2  group" href={props.url}>
+            <IoLink size={26} className="group-hover:neon" />
+          </Link>
+        </div>
+      </div>
     </motion.div>
   );
 };
