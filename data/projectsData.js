@@ -14,6 +14,7 @@ export const projectsData = [
     url: "https://vc-beauty-ba-git-main-danmartinez01.vercel.app/",
     category: "Web Application",
     img: "/images/vcscreen.jpg",
+    technologies: ["React", "CSS"],
     ProjectHeader: {
       title: "VcBeauty",
       publishDate: "2021",
@@ -25,16 +26,6 @@ export const projectsData = [
         title: "Vc Beauty",
         img: "/images/vcscreen.jpg",
       },
-      //   {
-      //     id: uuidv4(),
-      //     title: "Google Health Platform",
-      //     img: "/images/web-project-2.jpg",
-      //   },
-      //   {
-      //     id: uuidv4(),
-      //     title: "Google Health Platform",
-      //     img: "/images/mobile-project-2.jpg",
-      //   },
     ],
     ProjectInfo: {
       ClientHeading: "About Client",
@@ -66,14 +57,7 @@ export const projectsData = [
       Technologies: [
         {
           title: "Tools & Technologies",
-          techs: [
-            "HTML",
-            "CSS",
-            "JavaScript",
-            "Vue.js",
-            "TailwindCSS",
-            "AdobeXD",
-          ],
+          techs: ["NextJs", "CSS"],
         },
       ],
       ProjectDetailsHeading: "Challenge",
@@ -139,6 +123,7 @@ export const projectsData = [
     title: "English corner",
     url: "https://theenglishcorner.vercel.app/",
     category: "Web Application",
+    technologies: ["React", "Typescript", "ChakraUI"],
     img: "/images/bookcorner.jpg",
     ProjectHeader: {
       title: "Book Corner",
@@ -265,6 +250,7 @@ export const projectsData = [
     title: "Blog App",
     url: "project-management-ui",
     category: "Web application",
+    technologies: ["NextJs", "Postgres", "Tailwind"],
     img: "/images/blogapp.jpg",
     ProjectHeader: {
       title: "Blog App",
@@ -391,6 +377,7 @@ export const projectsData = [
     title: "El almacen",
     url: "https://elalmacenjs.netlify.app/",
     category: "Frontend",
+    technologies: ["HTML", "CSS"],
     img: "/images/almacen1.jpg",
     ProjectHeader: {
       title: "El almacen",
@@ -517,9 +504,10 @@ export const projectsData = [
     title: "Color Guessing Game",
     url: "https://guessthecolorrgb.netlify.app/",
     category: "Web Application",
+    technologies: ["HTML", "CSS", "Javascript"],
     img: "/images/rgbgame.jpg",
     ProjectHeader: {
-      title: "Color Guessing Game",
+      title: "Guess Color Game",
       publishDate: "2021",
       tags: "Frontend",
     },
@@ -640,14 +628,15 @@ export const projectsData = [
   },
   {
     id: 6,
-    title: "Apple New Design System",
-    url: "apple-new-design-system",
+    title: "Jewelry Store",
+    url: "https://otrocielostore.netlify.app/",
     category: "Web Application",
-    img: "/images/web-project-1.jpg",
+    img: "/images/oc.jpg",
+    technologies: ["React", "CSS", "Firebase"],
     ProjectHeader: {
       title: "Apple New Design System",
       publishDate: "Jul 26, 2021",
-      tags: "UI / Frontend",
+      tags: "Frontend",
     },
     ProjectImages: [
       {
