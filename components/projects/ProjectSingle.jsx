@@ -30,13 +30,13 @@ const ProjectSingle = (props) => {
           boxShadow: "0 4px 8px rgba(0, 0, 0, 0.3)", // Optional: Add a subtle shadow on hover
         }}
       >
-        {/* <img className="w-full h-2/4" src={props.img} alt="Single Project" /> */}
         <Image
           className="h-2/4"
           src={props.img}
           alt="Single Project"
           width={400}
           height={200}
+          unoptimized
         />
         <div className="px-6 py-4 flex flex-row ">
           {activeTheme === "dark" ? (
