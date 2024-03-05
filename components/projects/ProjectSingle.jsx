@@ -36,7 +36,6 @@ const ProjectSingle = (props) => {
           alt="Single Project"
           width={400}
           height={200}
-          unoptimized
         />
         <div className="px-6 py-4 flex flex-row ">
           {activeTheme === "dark" ? (

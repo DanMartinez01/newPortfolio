@@ -13,7 +13,7 @@ export const projectsData = [
     title: "Vc Beauty",
     url: "https://vc-beauty-ba-git-main-danmartinez01.vercel.app/",
     category: "Web Application",
-    img: "/vcscreen.jpg",
+    img: "/images/vcscreen.jpg",
     technologies: ["React", "CSS"],
     ProjectHeader: {
       title: "VcBeauty",
@@ -124,7 +124,7 @@ export const projectsData = [
     url: "https://theenglishcorner.vercel.app/",
     category: "Web Application",
     technologies: ["React", "Typescript", "ChakraUI"],
-    img: "/bookcorner.jpg",
+    img: "/images/bookcorner.jpg",
     ProjectHeader: {
       title: "Book Corner",
       publishDate: "2022",
@@ -251,7 +251,7 @@ export const projectsData = [
     url: "project-management-ui",
     category: "Web application",
     technologies: ["NextJs", "Postgres", "Tailwind"],
-    img: "/blogapp.jpg",
+    img: "/images/blogapp.jpg",
     ProjectHeader: {
       title: "Blog App",
       publishDate: "2024",
@@ -378,7 +378,7 @@ export const projectsData = [
     url: "https://elalmacenjs.netlify.app/",
     category: "Frontend",
     technologies: ["HTML", "CSS"],
-    img: "/almacen1.jpg",
+    img: "/images/almacen1.jpg",
     ProjectHeader: {
       title: "El almacen",
       publishDate: "2022",
@@ -505,7 +505,7 @@ export const projectsData = [
     url: "https://guessthecolorrgb.netlify.app/",
     category: "Web Application",
     technologies: ["HTML", "CSS", "Javascript"],
-    img: "/rgbgame.jpg",
+    img: "/images/rgbgame.jpg",
     ProjectHeader: {
       title: "Guess Color Game",
       publishDate: "2021",
@@ -631,7 +631,7 @@ export const projectsData = [
     title: "Jewelry Store",
     url: "https://otrocielostore.netlify.app/",
     category: "Web Application",
-    img: "/oc.jpg",
+    img: "/images/oc.jpg",
     technologies: ["React", "CSS", "Firebase"],
     ProjectHeader: {
       title: "Apple New Design System",
