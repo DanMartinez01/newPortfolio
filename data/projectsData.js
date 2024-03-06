@@ -134,7 +134,7 @@ export const projectsData = [
       {
         id: uuidv4(),
         title: "Book Corner",
-        img: "/images/bookcorner.jpg",
+        img: "/images/bookcorner.JPG",
       },
       //   {
       //     id: uuidv4(),
@@ -251,7 +251,7 @@ export const projectsData = [
     url: "project-management-ui",
     category: "Web application",
     technologies: ["NextJs", "Postgres", "Tailwind"],
-    img: "/images/blogapp.jpg",
+    img: "/images/blogapp.JPG",
     ProjectHeader: {
       title: "Blog App",
       publishDate: "2024",
@@ -378,7 +378,7 @@ export const projectsData = [
     url: "https://elalmacenjs.netlify.app/",
     category: "Frontend",
     technologies: ["HTML", "CSS"],
-    img: "/images/almacen1.jpg",
+    img: "/images/almacen1.JPG",
     ProjectHeader: {
       title: "El almacen",
       publishDate: "2022",
@@ -505,7 +505,7 @@ export const projectsData = [
     url: "https://guessthecolorrgb.netlify.app/",
     category: "Web Application",
     technologies: ["HTML", "CSS", "Javascript"],
-    img: "/images/rgbgame.jpg",
+    img: "/images/rgbgame.JPG",
     ProjectHeader: {
       title: "Guess Color Game",
       publishDate: "2021",
@@ -631,7 +631,7 @@ export const projectsData = [
     title: "Jewelry Store",
     url: "https://otrocielostore.netlify.app/",
     category: "Web Application",
-    img: "/images/oc.jpg",
+    img: "/images/oc.JPG",
     technologies: ["React", "CSS", "Firebase"],
     ProjectHeader: {
       title: "Apple New Design System",
