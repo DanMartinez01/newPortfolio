@@ -13,7 +13,7 @@ export const projectsData = [
     title: "Vc Beauty",
     url: "https://vc-beauty-ba-git-main-danmartinez01.vercel.app/",
     category: "Web Application",
-    img: "/images/vccreen.JPG",
+    img: "/images/vcscreen.JPG",
     technologies: ["React", "CSS"],
     ProjectHeader: {
       title: "VcBeauty",
