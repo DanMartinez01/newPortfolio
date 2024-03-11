@@ -66,15 +66,12 @@ function AppBanner() {
         className="w-full sm:w-2/3 text-right float-right mt-8 sm:mt-0"
       >
         <Image
-          layout="responsive"
-          src={
-            activeTheme === "dark"
-              ? "/images/developer.svg"
-              : "/images/developer-dark.svg"
-          }
+          // layout="responsive"
+          src={activeTheme === "dark" ? "/images/dev3.jpg" : "/images/dev3.jpg"}
           alt="Developer"
-          width={100}
-          height={100}
+          width={500}
+          height={500}
+          className="rounded-full ml-auto"
         />
       </motion.div>
     </motion.section>
