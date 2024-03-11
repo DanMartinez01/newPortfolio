@@ -1,6 +1,6 @@
-# Next.js, React & TailwindCSS Portfolio Project
+# Next.js, React & TailwindCSS Portfolio Project + Gemini AI Chat Bot
 
-A simple portfolio starter theme built with Next.js, React and Tailwind CSS.
+A simple portfolio starter theme built with Next.js, TailwindCss and GeminiAI
 
 ## Features
 
@@ -18,3 +18,4 @@ A simple portfolio starter theme built with Next.js, React and Tailwind CSS.
 - Back to top button
 - Download file button
 - Simple and responsive design
+- Chat Bot built with Gemini AI
