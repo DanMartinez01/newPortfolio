@@ -32,7 +32,8 @@ module.exports = {
         },
       },
       boxShadow: {
-        neon: "0 0 10px #00a1ff, 0 0 20px #00a1ff, 0 0 30px #00a1ff, 0 0 40px #00a1ff, 0 0 50px #00a1ff",
+        // neon: "0 0 10px #00a1ff, 0 0 20px #00a1ff, 0 0 30px #00a1ff, 0 0 40px #00a1ff, 0 0 50px #00a1ff",
+        neon: "0px 0px 60px 10px rgba(46,213,255,0.6)",
       },
     },
   },
