@@ -8,7 +8,6 @@ import { IoLink } from "react-icons/io5";
 import useThemeSwitcher from "../../hooks/useThemeSwitcher";
 
 const ProjectSingle = (props) => {
-  console.log(props, props.github, props.url);
   const technologies = props.technologies;
 
   const [activeTheme] = useThemeSwitcher();
@@ -21,14 +20,17 @@ const ProjectSingle = (props) => {
         duration: 0.7,
         delay: 0.15,
       }}
+      className="mb-4"
     >
       <div
-        className="max-w-sm rounded overflow-hidden shadow-lg mx-auto  w-3/4  h-full transition-transform transform  hover:shadow-neon hover:scale-105"
+        // className="max-w-sm rounded overflow-hidden shadow-lg mx-auto  w-3/4  h-full  mb-2 transition-transform transform  hover:shadow-neon hover:scale-105"
+        className={`max-w-sm rounded overflow-hidden mx-auto w-3/4 h-full transition-transform transform hover:shadow-neon hover:scale-105 border-2 border-transparent transition-border duration-300 ease-in-out shadow-md`}
         href={props.url}
         // style={{
         //   border: "2px solid transparent", // Set an initial transparent border
         //   transition: "border 0.3s ease-in-out", // Add transition to the border
         //   boxShadow: "0 4px 8px rgba(0, 0, 0, 0.3)", // Optional: Add a subtle shadow on hover
+        //   marginBottom: "10px",
         // }}
       >
         <Image
