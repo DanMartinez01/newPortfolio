@@ -58,15 +58,25 @@ function Chat({ initialMessage }) {
           className="flex flex-col gap-4 h-[480px] overflow-y-auto"
         >
           {messages.map((message) => (
+            // <div
+            //   key={message.id}
+            //   className={`p-4 max-w-[80%] rounded-3xl text-white text-balance ${
+            //     message.type === "bot"
+            //       ? "bg-blue-600 text-left self-start rounded-bl-none"
+            //       : "bg-blue-900  text-right self-end rounded-br-none"
+            //   }`}
+            // >
+            //   <p>{message.text}</p>
+            // </div>
             <div
               key={message.id}
-              className={`p-4 max-w-[80%] rounded-3xl text-white ${
+              className={`p-4 max-w-[80%] rounded-3xl text-white text-balance ${
                 message.type === "bot"
-                  ? "bg-blue-600 text-left self-start rounded-bl-none"
-                  : "bg-blue-900  text-right self-end rounded-br-none"
+                  ? "bg-blue-600 text-left self-start rounded-bl-none overflow-hidden break-words"
+                  : "bg-blue-900  text-right self-end rounded-br-none overflow-hidden break-words"
               }`}
             >
-              {message.text}
+              <p className="m-0">{message.text}</p>
             </div>
           ))}
         </div>
