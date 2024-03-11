@@ -8,6 +8,7 @@ import { IoLink } from "react-icons/io5";
 import useThemeSwitcher from "../../hooks/useThemeSwitcher";
 
 const ProjectSingle = (props) => {
+  console.log(props, props.github, props.url);
   const technologies = props.technologies;
 
   const [activeTheme] = useThemeSwitcher();
@@ -22,21 +23,20 @@ const ProjectSingle = (props) => {
       }}
     >
       <div
-        className="max-w-sm rounded overflow-hidden shadow-lg mx-auto  w-3/4  h-full transition-transform transform hover:scale-105 "
+        className="max-w-sm rounded overflow-hidden shadow-lg mx-auto  w-3/4  h-full transition-transform transform  hover:shadow-neon hover:scale-105"
         href={props.url}
-        style={{
-          border: "2px solid transparent", // Set an initial transparent border
-          transition: "border 0.3s ease-in-out", // Add transition to the border
-          boxShadow: "0 4px 8px rgba(0, 0, 0, 0.3)", // Optional: Add a subtle shadow on hover
-        }}
+        // style={{
+        //   border: "2px solid transparent", // Set an initial transparent border
+        //   transition: "border 0.3s ease-in-out", // Add transition to the border
+        //   boxShadow: "0 4px 8px rgba(0, 0, 0, 0.3)", // Optional: Add a subtle shadow on hover
+        // }}
       >
-        {/* <img className=" w-full h-2/4" src={props.img} alt="Single Project" /> */}
         <Image
-          className="h-2/4"
           src={props.img}
           alt="Single Project"
           width={400}
-          height={200}
+          height={100}
+          className="h-2/4"
         />
 
         <div className="px-6 py-4 flex flex-row ">
@@ -58,14 +58,11 @@ const ProjectSingle = (props) => {
             ))}
         </div>
         <div className="flex flex-row justify-end items-center mt-10 text-gray-500">
-          <Link
-            className="mx-2 group"
-            href={"https://www.github.com/danmartinez01"}
-          >
-            <FaGithub size={20} className="group-hover:neon" />
+          <Link className="mx-2" href={props.github}>
+            <FaGithub size={20} className="hover:scale-105" />
           </Link>
-          <Link className="mx-2  group" href={props.url}>
-            <IoLink size={26} className="group-hover:neon" />
+          <Link className="mx-2" href={props.url}>
+            <IoLink size={26} className="hover:scale-105" />
           </Link>
         </div>
       </div>
