@@ -69,8 +69,8 @@ function AppBanner() {
           // layout="responsive"
           src={activeTheme === "dark" ? "/images/dev3.jpg" : "/images/dev3.jpg"}
           alt="Developer"
-          width={500}
-          height={500}
+          width={400}
+          height={400}
           className="rounded-full ml-auto"
         />
       </motion.div>

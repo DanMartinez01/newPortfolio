@@ -20,18 +20,11 @@ const ProjectSingle = (props) => {
         duration: 0.7,
         delay: 0.15,
       }}
-      className="mb-4"
+      className="mb-8"
     >
       <div
-        // className="max-w-sm rounded overflow-hidden shadow-lg mx-auto  w-3/4  h-full  mb-2 transition-transform transform  hover:shadow-neon hover:scale-105"
-        className={`max-w-sm rounded overflow-hidden mx-auto w-3/4 h-full transition-transform transform hover:shadow-neon hover:scale-105 border-2 border-transparent transition-border duration-300 ease-in-out shadow-md`}
+        className={`max-w-sm rounded overflow-hidden mx-auto w-4/5 h-96 transition-transform transform hover:shadow-neon hover:scale-105 border-2 border-transparent transition-border duration-300 ease-in-out shadow-md`}
         href={props.url}
-        // style={{
-        //   border: "2px solid transparent", // Set an initial transparent border
-        //   transition: "border 0.3s ease-in-out", // Add transition to the border
-        //   boxShadow: "0 4px 8px rgba(0, 0, 0, 0.3)", // Optional: Add a subtle shadow on hover
-        //   marginBottom: "10px",
-        // }}
       >
         <Image
           src={props.img}
@@ -53,13 +46,13 @@ const ProjectSingle = (props) => {
             technologies.map((item, index) => (
               <span
                 key={index}
-                className="inline-block bg-gray-200 rounded-full px-2 py-1 text-sm font-semibold text-gray-700 mr-1"
+                className="inline-block bg-gray-200 rounded-full px-1 py-1 text-xs font-semibold text-gray-700 mr-1 mb-1"
               >
                 {item}
               </span>
             ))}
         </div>
-        <div className="flex flex-row justify-end items-center mt-10 text-gray-500">
+        <div className="flex flex-row justify-end items-center mt-12 text-gray-500">
           <Link className="mx-2" href={props.github}>
             <FaGithub size={20} className="hover:scale-105" />
           </Link>
