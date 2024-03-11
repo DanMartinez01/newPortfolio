@@ -70,10 +70,10 @@ function Chat({ initialMessage }) {
             // </div>
             <div
               key={message.id}
-              className={`p-4 max-w-[80%] rounded-3xl text-white text-balance ${
+              className={`p-4 max-w-[80%] h-auto rounded-3xl text-white items-center ${
                 message.type === "bot"
-                  ? "bg-blue-600 text-left self-start rounded-bl-none overflow-hidden break-words"
-                  : "bg-blue-900  text-right self-end rounded-br-none overflow-hidden break-words"
+                  ? "bg-blue-600 text-left self-start rounded-bl-none  break-words"
+                  : "bg-blue-900  text-right self-end rounded-br-none  break-words"
               }`}
             >
               <p className="m-0">{message.text}</p>
