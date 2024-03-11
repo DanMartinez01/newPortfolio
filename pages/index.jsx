@@ -11,7 +11,7 @@ export default function Home() {
       <PagesMetaHead title="Home" />
       <AppBanner />
       <ProjectsGrid />
-      <Chat initialMessage={"Hi, ask me a question!"} />
+      <Chat initialMessage={"Ask me a question!"} />
     </div>
   );
 }

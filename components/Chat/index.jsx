@@ -2,6 +2,7 @@
 
 import React, { useEffect, useRef, useState } from "react";
 import { getChatAnswer } from "./actions";
+import Image from "next/image";
 
 function Chat({ initialMessage }) {
   const [messages, setMessages] = useState(
@@ -49,25 +50,22 @@ function Chat({ initialMessage }) {
 
   return (
     <main>
-      <h1 className="p-2 text-3xl text-white text-center mt-10 bg-blue-500 rounded-3xl self-start rounded-bl-none">
-        Chat with me:
-      </h1>
-      <div className="flex flex-col gap-4 m-auto border border-neutral-500/20 p-4 rounded-md mt-10 ">
+      <div className="flex flex-col gap-4 m-auto border border-neutral-500/20 rounded-lg mt-10 ">
+        <div className="w-full py-6 px-6   flex flex-row items-center bg-blue-500 rounded-lg rounded-b-none">
+          <Image
+            src="/images/profilepic.jpg"
+            alt="chat user"
+            width={100}
+            height={100}
+            className="rounded-full w-20 h-20 "
+          />
+          <h1 className="text-3xl text-white text-center ml-4">Hi there! 👋🏼</h1>
+        </div>
         <div
           ref={container}
-          className="flex flex-col gap-4 h-[480px] overflow-y-auto"
+          className="flex flex-col gap-4 h-[480px] overflow-y-auto px-4"
         >
           {messages.map((message) => (
-            // <div
-            //   key={message.id}
-            //   className={`p-4 max-w-[80%] rounded-3xl text-white text-balance ${
-            //     message.type === "bot"
-            //       ? "bg-blue-600 text-left self-start rounded-bl-none"
-            //       : "bg-blue-900  text-right self-end rounded-br-none"
-            //   }`}
-            // >
-            //   <p>{message.text}</p>
-            // </div>
             <div
               key={message.id}
               className={`p-4 max-w-[80%] h-auto rounded-3xl text-white items-center ${
@@ -90,7 +88,7 @@ function Chat({ initialMessage }) {
             onChange={(event) => setQuestion(event.target.value)}
           />
           <button
-            className={`px-4 py-2 text-primary-50 bg-primary-500 rounded-lg rounded-l-none ${
+            className={`px-4 py-2 text-white bg-blue-600 rounded-lg rounded-l-none rounded-t-none ${
               loading ? "bg-primary-300" : "bg-primary-500"
             }`}
             disabled={loading}
