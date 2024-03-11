@@ -8,10 +8,10 @@ function AboutMeBio() {
     <div className="block sm:flex sm:gap-10 mt-10 sm:mt-20 items-center">
       <div className="w-full sm:w-1/4 mb-7 sm:mb-0">
         <Image
-          src="/images/profile.jpg"
-          width={200}
-          height={200}
-          className="rounded-full w-80 h-80"
+          src="/images/profilepic.jpg"
+          width={400}
+          height={400}
+          className="rounded-full h-72 w-72"
           alt="Profile Image"
         />
       </div>
