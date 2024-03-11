@@ -5,13 +5,13 @@ import { aboutMeData } from "../../data/aboutMeData";
 function AboutMeBio() {
   const [aboutMe, setAboutMe] = useState(aboutMeData);
   return (
-    <div className="block sm:flex sm:gap-10 mt-10 sm:mt-20">
+    <div className="block sm:flex sm:gap-10 mt-10 sm:mt-20 items-center">
       <div className="w-full sm:w-1/4 mb-7 sm:mb-0">
         <Image
           src="/images/profile.jpg"
           width={200}
           height={200}
-          className="rounded-lg"
+          className="rounded-full w-80 h-80"
           alt="Profile Image"
         />
       </div>
