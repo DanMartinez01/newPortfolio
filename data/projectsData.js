@@ -10,7 +10,7 @@ import {
 export const projectsData = [
   {
     id: 1,
-    title: "Vc Beauty",
+    title: "Beauty Salon",
     url: "https://vc-beauty-ba-git-main-danmartinez01.vercel.app/",
     github: "https://github.com/DanMartinez01/VcBeautyBA/",
     category: "Web Application",
