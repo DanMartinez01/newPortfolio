@@ -3,6 +3,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { getChatAnswer } from "./actions";
 import Image from "next/image";
+import { IoIosSend } from "react-icons/io";
 
 function Chat({ initialMessage }) {
   const [messages, setMessages] = useState(
@@ -50,8 +51,8 @@ function Chat({ initialMessage }) {
 
   return (
     <main>
-      <div className="flex flex-col gap-4 m-auto border border-neutral-500/20 rounded-lg mt-10 ">
-        <div className="w-full py-6 px-6   flex flex-row items-center bg-blue-500 rounded-lg rounded-b-none">
+      <div className="flex flex-col gap-4 m-auto border border-neutral-500/20 rounded-lg mt-10">
+        <div className="w-full py-6 px-6 flex flex-row items-center bg-blue-500 rounded-lg rounded-b-none">
           <Image
             src="/images/profilepic.jpg"
             alt="chat user"
@@ -80,7 +81,7 @@ function Chat({ initialMessage }) {
         </div>
         <form className="flex items-center" onSubmit={handleSubmit}>
           <input
-            className="rounded rounded-r-none flex-1 border border-neutral-500/20 text-black py-2 px-4"
+            className="rounded rounded-r-none flex-1  border border-neutral-500/20 text-black py-2 px-4"
             name="question"
             placeholder="Who are you?"
             type="text"
@@ -88,13 +89,13 @@ function Chat({ initialMessage }) {
             onChange={(event) => setQuestion(event.target.value)}
           />
           <button
-            className={`px-4 py-2 text-white bg-blue-600 rounded-lg rounded-l-none rounded-t-none ${
+            className={`px-4 py-2 bg-white border border-neutral-500/20 ${
               loading ? "bg-primary-300" : "bg-primary-500"
             }`}
             disabled={loading}
             type="submit"
           >
-            {loading ? "Loading..." : "Send"}
+            {loading ? "..." : <IoIosSend color="black" size={24} />}
           </button>
         </form>
       </div>
