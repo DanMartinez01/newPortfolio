@@ -35,11 +35,14 @@ const ProjectSingle = (props) => {
         />
 
         <div className="px-2 py-4 flex flex-row ">
-          {activeTheme === "dark" ? (
+          {/* {activeTheme === "dark" ? (
             <p className="text-white text-xl font-bold">{props.title}</p>
           ) : (
             <p className="text-black text-xl font-bold">{props.title}</p>
-          )}
+          )} */}
+          <p className="font-general-semibold text-xl  text-ternary-dark dark:text-primary-light">
+            {props.title}
+          </p>
         </div>
         <div className="px-2">
           {technologies &&
