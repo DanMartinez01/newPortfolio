@@ -7,6 +7,6 @@ export const aboutMeData = [
   },
   {
     id: uuidv4(),
-    bio: "I have experience in React, NextJs, Typescript,PostgreSQL,TailwindCss, among others",
+    bio: "I have experience in React, NextJs, Typescript,PostgreSQL,TailwindCss, among others.",
   },
 ];
