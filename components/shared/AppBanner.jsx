@@ -2,6 +2,9 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { FiArrowDownCircle } from "react-icons/fi";
 import useThemeSwitcher from "../../hooks/useThemeSwitcher";
+import Monkey from "../Monkey";
+import Space from "../Space";
+import Asteroid from "../Asteroid";
 
 function AppBanner() {
   const [activeTheme] = useThemeSwitcher();
@@ -11,7 +14,7 @@ function AppBanner() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ ease: "easeInOut", duration: 0.9, delay: 0.2 }}
-      className="flex flex-col sm:justify-between items-center sm:flex-row mt-5 md:mt-2"
+      className="flex flex-col mx-auto justify-center items-center sm:flex-row mt-5 md:mt-12"
     >
       <div className="w-full md:w-1/3 text-left">
         <motion.h1
@@ -63,16 +66,14 @@ function AppBanner() {
         initial={{ opacity: 0, y: -180 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ ease: "easeInOut", duration: 0.9, delay: 0.2 }}
-        className="w-full sm:w-2/3 text-right float-right mt-8 sm:mt-0"
+        className="flex flex-col green-200"
       >
-        <Image
-          // layout="responsive"
-          src={activeTheme === "dark" ? "/images/dev3.png" : "/images/dev3.png"}
-          alt="Developer"
-          width={800}
-          height={800}
-          className="rounded-full ml-auto"
-        />
+        <div className="flex flex-row">
+          <Monkey />
+          <Asteroid />
+        </div>
+
+        <Space />
       </motion.div>
     </motion.section>
   );
