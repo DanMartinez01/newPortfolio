@@ -2,7 +2,8 @@ import { useState } from "react";
 import { FiSearch } from "react-icons/fi";
 import ProjectSingle from "./ProjectSingle";
 import { projectsData } from "../../data/projectsData";
-import ProjectsFilter from "./ProjectsFilter";
+// import ProjectsFilter from "./ProjectsFilter";
+import ProjectsTech from "./ProjectsTech";
 
 function ProjectsGrid() {
   const [searchProject, setSearchProject] = useState();
@@ -28,12 +29,12 @@ function ProjectsGrid() {
 
   return (
     <section className="py-5 sm:py-10 mt-5 sm:mt-10">
+      <ProjectsTech />
       <div className="text-center">
         <p className="font-general-medium text-2xl sm:text-4xl mb-1 text-ternary-dark dark:text-ternary-light">
           Projects portfolio
         </p>
       </div>
-
       <div className="mt-10 sm:mt-16">
         {/* <h3 className="font-general-regular text-center text-secondary-dark dark:text-ternary-light text-md sm:text-xl mb-3">
           Search projects by title or filter by category
