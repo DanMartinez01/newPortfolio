@@ -11,11 +11,7 @@ function MeshComponent() {
     const gltf = useLoader(GLTFLoader, fileUrl);
     const [textureLoaded, setTextureLoaded] = useState(false);
 
-
     const textureLoader = new THREE.TextureLoader();
-
-
-
     const texture = textureLoader.load("/animation/space/Block_of_Gold_baseColor.png", () => {
 
         setTextureLoaded(true);
