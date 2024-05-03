@@ -73,7 +73,7 @@ function AppBanner() {
           <Asteroid />
         </div>
 
-        {/* <Space /> */}
+        <Space />
       </motion.div>
     </motion.section>
   );
