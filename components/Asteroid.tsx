@@ -44,7 +44,7 @@ function MeshComponent() {
 
 export default function Asteroid() {
     return (
-        <div className='flex justify-center items-center '>
+        <div className='-mt-8 -ml-32'>
             <Canvas>
                 <OrbitControls />
                 <ambientLight />

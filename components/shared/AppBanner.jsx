@@ -14,7 +14,7 @@ function AppBanner() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ ease: "easeInOut", duration: 0.9, delay: 0.2 }}
-      className="flex flex-col mx-auto justify-center items-center sm:flex-row mt-5 md:mt-12"
+      className="flex flex-col-reverse mx-auto justify-center md:justify-around lg:justify-around xl:justify-around items-center sm:flex-row mt-5 md:mt-12"
     >
       <div className="w-full md:w-1/3 text-left">
         <motion.h1
@@ -54,7 +54,7 @@ function AppBanner() {
           <a
             download="CV_Resume.pdf"
             href="/files/CV_Resume.pdf"
-            className="font-general-medium flex justify-center items-center w-36 sm:w-48 mt-12 mb-6 sm:mb-0 text-lg border border-indigo-200 dark:border-ternary-dark py-2.5 sm:py-3 shadow-lg rounded-lg bg-indigo-50 focus:ring-1 focus:ring-indigo-900 hover:bg-indigo-500 text-gray-500 hover:text-white duration-500"
+            className=" animate-bounce focus:animate-none hover:animate-none font-general-medium flex justify-center items-center w-36 sm:w-48 mt-12 mb-6 sm:mb-0 text-lg border border-indigo-200 dark:border-ternary-dark py-2.5 sm:py-3 shadow-lg rounded-lg bg-indigo-50 focus:ring-1 focus:ring-indigo-900 hover:bg-indigo-500 text-gray-500 hover:text-white duration-500"
             aria-label="Download Resume"
           >
             <FiArrowDownCircle className="ml-0 sm:ml-1 mr-2 sm:mr-3 h-5 w-5 sn:w-6 sm:h-6 duration-100"></FiArrowDownCircle>
@@ -68,12 +68,9 @@ function AppBanner() {
         transition={{ ease: "easeInOut", duration: 0.9, delay: 0.2 }}
         className="flex flex-col green-200"
       >
-        <div className="flex flex-row">
+        <div className="flex flex-row my-4">
           <Monkey />
-          <Asteroid />
         </div>
-
-        <Space />
       </motion.div>
     </motion.section>
   );

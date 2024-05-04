@@ -29,10 +29,10 @@ function MeshComponent() {
     });
   }
 
-  gltf.scene.scale.set(1, 1, 1);
+  gltf.scene.scale.set(40, 40, 40);
 
   useFrame(() => {
-    mesh.current.rotation.x += 0.009;
+    mesh.current.rotation.y += 0.006;
   });
 
   return (
@@ -44,7 +44,7 @@ function MeshComponent() {
 
 export default function Monkey() {
   return (
-    <div className='flex justify-center items-center'>
+    <div className='flex justify-center items-center h-full w-full'>
       <Canvas>
         <OrbitControls />
         <ambientLight />

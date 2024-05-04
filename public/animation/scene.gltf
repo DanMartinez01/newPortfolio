@@ -3,86 +3,86 @@
     {
       "bufferView": 2,
       "componentType": 5126,
-      "count": 30720,
+      "count": 2855,
       "max": [
-        2.960988759994507,
-        2.969444990158081,
-        2.9590539932250977
+        0.05333302542567253,
+        0.05499900504946709,
+        0.055000003427267075
       ],
       "min": [
-        -2.960988998413086,
-        -2.969444990158081,
-        -2.9591634273529053
+        -0.04999950900673866,
+        -0.05499996244907379,
+        -0.054999373853206635
       ],
       "type": "VEC3"
     },
     {
       "bufferView": 2,
-      "byteOffset": 368640,
+      "byteOffset": 34260,
       "componentType": 5126,
-      "count": 30720,
+      "count": 2855,
       "max": [
-        0.9999874234199524,
-        1.0,
-        1.0
+        0.9999839067459106,
+        0.9999996423721313,
+        0.9999999403953552
       ],
       "min": [
-        -0.999958872795105,
+        -0.9999839067459106,
         -1.0,
-        -1.0
+        -0.9999999403953552
       ],
       "type": "VEC3"
     },
     {
       "bufferView": 1,
       "componentType": 5126,
-      "count": 30720,
+      "count": 2855,
       "max": [
-        0.9896636009216309,
-        0.4718904495239258
+        0.0761900395154953,
+        11.99987506866455
       ],
       "min": [
-        -0.00020806881366297603,
-        -0.0001030157582135871
+        -0.07142787426710129,
+        -10.000000953674316
       ],
       "type": "VEC2"
     },
     {
       "bufferView": 0,
       "componentType": 5125,
-      "count": 46068,
+      "count": 8436,
       "type": "SCALAR"
     }
   ],
   "asset": {
     "extras": {
-      "author": "Abby Crawford (https://sketchfab.com/abby)",
+      "author": "S_way (https://sketchfab.com/S_way)",
       "license": "SKETCHFAB Standard (https://sketchfab.com/licenses)",
-      "source": "https://sketchfab.com/3d-models/3december-day-1-a-maze-ball-03818f3b71de400088985fc076a0be69",
-      "title": "3December Day 1: A-maze-ball"
+      "source": "https://sketchfab.com/3d-models/lissajous--curve-x5-y3-010b5fa2a18c459496e8fbb9ec3f89da",
+      "title": "Lissajous_ Curve_X5_Y3"
     },
-    "generator": "Sketchfab-15.49.0",
+    "generator": "Sketchfab-16.12.0",
     "version": "2.0"
   },
   "bufferViews": [
     {
       "buffer": 0,
-      "byteLength": 184272,
+      "byteLength": 33744,
       "name": "floatBufferViews",
       "target": 34963
     },
     {
       "buffer": 0,
-      "byteLength": 245760,
-      "byteOffset": 184272,
+      "byteLength": 22840,
+      "byteOffset": 33744,
       "byteStride": 8,
       "name": "floatBufferViews",
       "target": 34962
     },
     {
       "buffer": 0,
-      "byteLength": 737280,
-      "byteOffset": 430032,
+      "byteLength": 68520,
+      "byteOffset": 56584,
       "byteStride": 12,
       "name": "floatBufferViews",
       "target": 34962
@@ -90,28 +90,28 @@
   ],
   "buffers": [
     {
-      "byteLength": 1167312,
+      "byteLength": 125104,
       "uri": "scene.bin"
     }
   ],
   "materials": [
     {
-      "doubleSided": true,
-      "name": "Material.001",
+      "name": "Material_0",
       "pbrMetallicRoughness": {
         "baseColorFactor": [
-          0.009770685722954022,
-          0.4404641729196031,
-          0.3971291694074382,
+          0.0,
+          0.0,
+          1.0,
           1.0
         ],
-        "metallicFactor": 0.0
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.5
       }
     }
   ],
   "meshes": [
     {
-      "name": "Object_0",
+      "name": "Node_0",
       "primitives": [
         {
           "attributes": {
@@ -155,12 +155,6 @@
       "children": [
         2
       ],
-      "name": "root"
-    },
-    {
-      "children": [
-        3
-      ],
       "matrix": [
         1.0,
         0.0,
@@ -179,17 +173,23 @@
         0.0,
         1.0
       ],
-      "name": "GLTF_SceneRootNode"
+      "name": "USDRoot"
+    },
+    {
+      "children": [
+        3
+      ],
+      "name": "shape"
     },
     {
       "children": [
         4
       ],
-      "name": "Icosphere_0"
+      "name": "Geom"
     },
     {
       "mesh": 0,
-      "name": "Object_4"
+      "name": "Node_0"
     }
   ],
   "scene": 0,
