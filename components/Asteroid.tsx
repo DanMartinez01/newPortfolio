@@ -44,7 +44,7 @@ function MeshComponent() {
 
 export default function Asteroid() {
     return (
-        <div className='-mt-8 -ml-32'>
+        <div className=''>
             <Canvas>
                 <OrbitControls />
                 <ambientLight />

@@ -1,8 +1,0 @@
-Model Information:
-* title:	Lissajous_ Curve_X5_Y3
-* source:	https://sketchfab.com/3d-models/lissajous--curve-x5-y3-010b5fa2a18c459496e8fbb9ec3f89da
-* author:	S_way (https://sketchfab.com/S_way)
-
-Model License:
-* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
-* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works

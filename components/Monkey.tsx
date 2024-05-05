@@ -10,29 +10,29 @@ function MeshComponent() {
   const fileUrl = "/animation/scene.gltf";
   const mesh = useRef<Mesh>(null!);
   const gltf = useLoader(GLTFLoader, fileUrl);
-  const [textureLoaded, setTextureLoaded] = useState(false);
+  // const [textureLoaded, setTextureLoaded] = useState(false);
 
 
-  const textureLoader = new THREE.TextureLoader();
-  const texture = textureLoader.load("/animation/default_baseColorMetal.jpg", () => {
+  // const textureLoader = new THREE.TextureLoader();
+  // const texture = textureLoader.load("/animation/default_baseColorMetal.jpg", () => {
 
-    setTextureLoaded(true);
-  });
+  //   setTextureLoaded(true);
+  // });
 
 
-  if (textureLoaded) {
-    gltf.scene.traverse(child => {
-      if (child instanceof THREE.Mesh) {
-        child.material.map = texture;
-        child.material.needsUpdate = true;
-      }
-    });
-  }
+  // if (textureLoaded) {
+  //   gltf.scene.traverse(child => {
+  //     if (child instanceof THREE.Mesh) {
+  //       child.material.map = texture;
+  //       child.material.needsUpdate = true;
+  //     }
+  //   });
+  // }
 
-  gltf.scene.scale.set(40, 40, 40);
+  gltf.scene.scale.set(1, 1, 1);
 
   useFrame(() => {
-    mesh.current.rotation.y += 0.006;
+    mesh.current.rotation.x += 0.006;
   });
 
   return (
@@ -44,7 +44,7 @@ function MeshComponent() {
 
 export default function Monkey() {
   return (
-    <div className='flex justify-center items-center h-full w-full'>
+    <div className='flex justify-center items-center'>
       <Canvas>
         <OrbitControls />
         <ambientLight />
