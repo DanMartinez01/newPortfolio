@@ -5,6 +5,11 @@ import useThemeSwitcher from "../../hooks/useThemeSwitcher";
 import Monkey from "../Monkey";
 import Space from "../Space";
 import Asteroid from "../Asteroid";
+import dynamic from "next/dynamic";
+
+const SceneTool = dynamic(() => import("../SceneTool"), {
+  ssr: false,
+});
 
 function AppBanner() {
   const [activeTheme] = useThemeSwitcher();
@@ -14,7 +19,7 @@ function AppBanner() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ ease: "easeInOut", duration: 0.9, delay: 0.2 }}
-      className="flex flex-col-reverse mx-auto justify-center md:justify-around lg:justify-around xl:justify-around items-center sm:flex-row mt-5 md:mt-12"
+      className="flex flex-col-reverse mx-auto justify-center md:justify-around lg:justify-around xl:justify-around items-center sm:flex-row mt-5 md:mt-10"
     >
       <div className="w-full md:w-1/3 text-left">
         <motion.h1
@@ -27,7 +32,7 @@ function AppBanner() {
           }}
           className="font-general-semibold text-2xl lg:text-3xl xl:text-4xl text-center sm:text-left text-ternary-dark dark:text-primary-light uppercase"
         >
-          Hi, I am Daniela
+          Hi There!
         </motion.h1>
         <motion.p
           initial={{ opacity: 0 }}
@@ -39,7 +44,7 @@ function AppBanner() {
           }}
           className="font-general-medium mt-4 text-lg md:text-xl lg:text-2xl xl:text-3xl text-center sm:text-left leading-normal text-gray-500 dark:text-gray-200"
         >
-          A Full-Stack Developer & ESL teacher
+          I'm Daniela, a Full-Stack Developer & ESL teacher
         </motion.p>
         <motion.div
           initial={{ opacity: 0 }}
@@ -66,11 +71,9 @@ function AppBanner() {
         initial={{ opacity: 0, y: -180 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ ease: "easeInOut", duration: 0.9, delay: 0.2 }}
-        className="flex flex-col green-200"
+        className="flex flex-col items-center justify-center"
       >
-        <div className="flex flex-row my-4">
-          <Monkey />
-        </div>
+        <SceneTool />
       </motion.div>
     </motion.section>
   );
