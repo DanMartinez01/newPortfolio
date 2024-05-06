@@ -7,7 +7,7 @@ export default function index() {
   return (
     <Canvas
       style={{
-        height: "400px",
+        height: "300px",
       }}
     >
       <PerspectiveCamera

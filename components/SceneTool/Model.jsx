@@ -9,9 +9,16 @@ export default function Model() {
   const tool = useRef(null);
   console.log(nodes);
 
+  let useControls;
+  if (process.env.NODE_ENV === "development") {
+    useControls = require("leva").useControls;
+  } else {
+    useControls = () => ({}); // Mocking useControls function in production mode
+  }
+
   useFrame(() => {
     if (tool.current) {
-      tool.current.rotation.x += 0.01;
+      tool.current.rotation.y += 0.01;
     }
   });
 

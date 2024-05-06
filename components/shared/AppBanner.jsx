@@ -19,7 +19,7 @@ function AppBanner() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ ease: "easeInOut", duration: 0.9, delay: 0.2 }}
-      className="flex flex-col-reverse mx-auto justify-center md:justify-around lg:justify-around xl:justify-around items-center sm:flex-row mt-5 md:mt-10"
+      className="flex flex-col mx-auto justify-center md:justify-around lg:justify-around xl:justify-around items-center sm:flex-row mt-5 md:mt-10"
     >
       <div className="w-full md:w-1/3 text-left">
         <motion.h1
