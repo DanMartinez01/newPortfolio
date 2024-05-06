@@ -5,8 +5,9 @@ import { MeshTransmissionMaterial } from "@react-three/drei";
 import { useControls } from "leva";
 
 export default function Model() {
-  const { nodes } = useGLTF("/tool.glb");
-  const tool = useRef(null);
+  const { nodes } = useGLTF("/bolt.glb");
+  const bolt = useRef(null);
+  console.log("nodes", nodes);
 
   let useControls;
   if (process.env.NODE_ENV === "development") {
@@ -16,8 +17,8 @@ export default function Model() {
   }
 
   useFrame(() => {
-    if (tool.current) {
-      tool.current.rotation.y += 0.01;
+    if (bolt.current) {
+      bolt.current.rotation.y += 0.01;
     }
   });
 
@@ -35,7 +36,7 @@ export default function Model() {
   });
 
   return (
-    <mesh ref={tool} {...nodes.Cube001} position={[0, 0, 0]} scale={[1, 1, 1]}>
+    <mesh ref={bolt} {...nodes.Bolt} position={[0, 0, 0]} scale={[1, 1, 1]}>
       <MeshTransmissionMaterial {...materialProps} />
     </mesh>
   );

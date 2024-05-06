@@ -49,10 +49,15 @@ import { FaReact, FaGitSquare } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
 import { SiTypescript, SiTailwindcss } from "react-icons/si";
 import techStack from "./techStack.json";
+import dynamic from "next/dynamic";
 
 function ProjectsTech() {
   const containerRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
+
+  const SceneBolt = dynamic(() => import("../SceneBolt"), {
+    ssr: false,
+  });
 
   useEffect(() => {
     const options = {
@@ -121,6 +126,7 @@ function ProjectsTech() {
             ))}
         </AnimatePresence>
       </div>
+      <SceneBolt />
     </div>
   );
 }

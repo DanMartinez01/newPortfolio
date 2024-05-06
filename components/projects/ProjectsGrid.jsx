@@ -9,18 +9,6 @@ function ProjectsGrid() {
   const [searchProject, setSearchProject] = useState();
   const [selectProject, setSelectProject] = useState();
 
-  // @todo - To be fixed
-  // const searchProjectsByTitle = projectsData.filter((item) => {
-  // 	const result = item.title
-  // 		.toLowerCase()
-  // 		.includes(searchProject.toLowerCase())
-  // 		? item
-  // 		: searchProject == ''
-  // 		? item
-  // 		: '';
-  // 	return result;
-  // });
-
   const selectProjectsByCategory = projectsData.filter((item) => {
     let category =
       item.category.charAt(0).toUpperCase() + item.category.slice(1);
