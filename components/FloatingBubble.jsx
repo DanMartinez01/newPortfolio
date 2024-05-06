@@ -9,7 +9,7 @@ function FloatingBubble() {
     setIsChatOpen((prevIsOpen) => !prevIsOpen);
     if (!isChatOpen) {
       // Calculate the position to scroll to
-      const scrollPosition = document.body.scrollHeight + 200; // Adjust 100 to your preference
+      const scrollPosition = document.body.scrollHeight + 300; // Adjust 100 to your preference
 
       // Scroll to the calculated position
       window.scrollTo({ top: scrollPosition, behavior: "smooth" });

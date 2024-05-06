@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { FaGithub } from "react-icons/fa";
 import { IoLink } from "react-icons/io5";
-import { useState, useEffect } from "react"; // Import useState and useEffect
+import { useState, useEffect } from "react";
 
 import useThemeSwitcher from "../../hooks/useThemeSwitcher";
 
@@ -13,10 +13,8 @@ const ProjectSingle = (props) => {
 
   // Define array of box shadow styles, including your custom shadow
   const boxShadowStyles = [
-    // "0 4px 6px rgba(0, 0, 0, 0.1)",
-    // "0 4px 8px rgba(0, 0, 0, 0.2)",
     "0 6px 12px rgba(0, 0, 0, 0.3)",
-    "0 0 20px rgba(33, 147, 176, 0.5)", // Your custom shadow
+    "0 0 20px rgba(33, 147, 176, 0.5)",
   ];
 
   // Use state to track current box shadow style index
@@ -56,14 +54,16 @@ const ProjectSingle = (props) => {
           transition: `box-shadow ${transitionDuration} ${transitionTimingFunction}`, // Apply transition
         }}
       >
-        <Image
-          src={props.img}
-          alt="Single Project"
-          width={400}
-          height={100}
-          // layout="responsive"
-          className="h-2/4"
-        />
+        <Link className="" href={props.url}>
+          <Image
+            src={props.img}
+            alt="Single Project"
+            width={400}
+            height={100}
+            // layout="responsive"
+            className="h-2/4"
+          />
+        </Link>
 
         <div className="px-2 py-4 flex flex-row ">
           <p className="font-general-semibold text-xl  text-ternary-dark dark:text-primary-light">
@@ -75,7 +75,7 @@ const ProjectSingle = (props) => {
             technologies.map((item, index) => (
               <span
                 key={index}
-                className="inline-block bg-gray-200 rounded-full px-1 py-1 text-xs font-semibold text-gray-700 mr-1 mb-1"
+                className="inline-block bg-gray-200 rounded-full px-2 py-1 text-xs font-semibold text-gray-700 mr-2 mb-1"
               >
                 {item}
               </span>

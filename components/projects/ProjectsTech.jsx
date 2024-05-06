@@ -101,11 +101,11 @@ function ProjectsTech() {
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 exit={{ x: -100, opacity: 0 }}
-                className=" w-full mt-10  px-2 py-4 sm:w-1/2 md:w-1/3 lg:w-1/4  flex justify-center my-2  rounded-lg tracking-wide text-white"
+                className="mt-10  px-2 py-4 w-1/2 md:w-1/2 lg:w-1/4  flex justify-center my-2  rounded-lg tracking-wide text-white"
               >
-                <div className="w-full flex justify-center max-w-xs bg-gray-200 dark:bg-gray-900 rounded-lg shadow-md overflow-hidden">
+                <div className="w-full flex justify-center  items-center max-w-xs bg-gray-200 dark:bg-gray-900 rounded-lg shadow-md overflow-hidden">
                   <div className="px-2 py-4">
-                    <p className="text-lg font-semibold text-black dark:text-white">
+                    <p className="text-md md:text-lg lg:text-lg xl:text-lg  text-black dark:text-white text-center">
                       {tech.name}
                     </p>
                     {/* <div className="flex justify-center items-center">
