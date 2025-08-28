@@ -24,6 +24,8 @@ import React from "react";
 import PagesMetaHead from "../components/PagesMetaHead";
 import ProjectsGrid from "../components/projects/ProjectsGrid";
 import AppBanner from "../components/shared/AppBanner";
+import SkillsSection from "../components/shared/SkillsSection";
+import CallToAction from "../components/shared/CallToAction";
 import Chat from "../components/Chat";
 import FloatingBubble from "../components/FloatingBubble";
 import dynamic from "next/dynamic";
@@ -38,7 +40,9 @@ export default function Home() {
       <Scene />
       <PagesMetaHead title="Home" />
       <AppBanner />
+      <SkillsSection />
       <ProjectsGrid />
+      <CallToAction />
       <FloatingBubble />
     </div>
   );

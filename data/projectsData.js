@@ -34,31 +34,31 @@ export const projectsData = [
         {
           id: uuidv4(),
           title: "Name",
-          details: "Company Ltd",
+          details: "VcBeauty Salon",
         },
         {
           id: uuidv4(),
           title: "Services",
-          details: "Web Development",
+          details: "Beauty & Wellness",
         },
         {
           id: uuidv4(),
           title: "Website",
-          details: "https://company.com",
+          details: "https://vc-beauty-ba-git-main-danmartinez01.vercel.app/",
         },
         {
           id: uuidv4(),
           title: "Phone",
-          details: "555 8888 888",
+          details: "Contact via website",
         },
       ],
       ObjectivesHeading: "Objective",
       ObjectivesDetails:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, natus! Quibusdam enim quod in esse, mollitia molestias incidunt quas ipsa accusamus veniam.",
+        "A modern beauty salon website built with React and CSS. Features include appointment booking, service showcase, and responsive design for mobile and desktop users.",
       Technologies: [
         {
           title: "Tools & Technologies",
-          techs: ["NextJs", "CSS"],
+          techs: ["React", "CSS", "Responsive Design"],
         },
       ],
       ProjectDetailsHeading: "Challenge",
@@ -66,57 +66,25 @@ export const projectsData = [
         {
           id: uuidv4(),
           details:
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.",
+            "Developed a professional beauty salon website that showcases services, allows online booking, and provides an excellent user experience across all devices. The project required careful attention to design aesthetics and user interface to match the beauty industry standards.",
         },
         {
           id: uuidv4(),
           details:
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?",
+            "Implemented responsive design principles to ensure the website looks and functions perfectly on mobile phones, tablets, and desktop computers.",
         },
         {
           id: uuidv4(),
           details:
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?",
+            "Created an intuitive navigation system and booking interface that makes it easy for customers to find services and schedule appointments.",
         },
         {
           id: uuidv4(),
           details:
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.",
+            "The project demonstrates strong frontend development skills with React and modern CSS techniques, delivering a polished and professional web application.",
         },
       ],
       SocialSharingHeading: "Share This",
-      // SocialSharing: [
-      // 	{
-      // 		id: uuidv4(),
-      // 		name: 'Twitter',
-      // 		icon: <FiTwitter />,
-      // 		url: 'https://twitter.com/realstoman',
-      // 	},
-      // 	{
-      // 		id: uuidv4(),
-      // 		name: 'Instagram',
-      // 		icon: <FiInstagram />,
-      // 		url: 'https://instagram.com/realstoman',
-      // 	},
-      // 	{
-      // 		id: uuidv4(),
-      // 		name: 'Facebook',
-      // 		icon: <FiFacebook />,
-      // 		url: 'https://facebook.com/',
-      // 	},
-      // 	{
-      // 		id: uuidv4(),
-      // 		name: 'LinkedIn',
-      // 		icon: <FiLinkedin />,
-      // 		url: 'https://linkedin.com/',
-      // 	},
-      // 	{
-      // 		id: uuidv4(),
-      // 		name: 'Youtube',
-      // 		icon: <FiYoutube />,
-      // 		url: 'https://www.youtube.com/c/StomanStudio',
-      // 	},
-      // ],
     },
   },
   {
@@ -138,16 +106,6 @@ export const projectsData = [
         title: "Book Corner",
         img: "/images/bookcorner.JPG",
       },
-      //   {
-      //     id: uuidv4(),
-      //     title: "Phoenix Digital Agency",
-      //     img: "/images/web-project-2.jpg",
-      //   },
-      //   {
-      //     id: uuidv4(),
-      //     title: "Phoenix Digital Agency",
-      //     img: "/images/mobile-project-2.jpg",
-      //   },
     ],
     ProjectInfo: {
       ClientHeading: "About Client",
@@ -155,37 +113,36 @@ export const projectsData = [
         {
           id: uuidv4(),
           title: "Name",
-          details: "Company Ltd",
+          details: "Educational Platform",
         },
         {
           id: uuidv4(),
           title: "Services",
-          details: "UI Design & Frontend Development",
+          details: "English Learning & Education",
         },
         {
           id: uuidv4(),
           title: "Website",
-          details: "https://company.com",
+          details: "https://theenglishcorner.vercel.app/",
         },
         {
           id: uuidv4(),
           title: "Phone",
-          details: "555 8888 888",
+          details: "Contact via website",
         },
       ],
       ObjectivesHeading: "Objective",
       ObjectivesDetails:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, natus! Quibusdam enim quod in esse, mollitia molestias incidunt quas ipsa accusamus veniam.",
+        "An English learning platform built with Next.js and TypeScript. Features include interactive lessons, progress tracking, and a modern UI with Chakra UI components.",
       Technologies: [
         {
           title: "Tools & Technologies",
           techs: [
-            "HTML",
-            "CSS",
-            "JavaScript",
-            "Vue.js",
-            "TailwindCSS",
-            "AdobeXD",
+            "Next.js",
+            "TypeScript",
+            "Chakra UI",
+            "React",
+            "Responsive Design",
           ],
         },
       ],
@@ -194,57 +151,25 @@ export const projectsData = [
         {
           id: uuidv4(),
           details:
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.",
+            "Created a comprehensive English learning platform that combines modern web technologies with educational content. The challenge was to build an intuitive interface that makes learning engaging while maintaining technical excellence.",
         },
         {
           id: uuidv4(),
           details:
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?",
+            "Implemented TypeScript for better code quality and maintainability, ensuring a robust foundation for future development.",
         },
         {
           id: uuidv4(),
           details:
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?",
+            "Used Chakra UI to create a consistent and accessible design system that works seamlessly across different devices and screen sizes.",
         },
         {
           id: uuidv4(),
           details:
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.",
+            "The project demonstrates full-stack development skills with Next.js, showcasing both frontend and backend capabilities in a real-world application.",
         },
       ],
       SocialSharingHeading: "Share This",
-      // SocialSharing: [
-      // 	{
-      // 		id: uuidv4(),
-      // 		name: 'Twitter',
-      // 		icon: <FiTwitter />,
-      // 		url: 'https://twitter.com/realstoman',
-      // 	},
-      // 	{
-      // 		id: uuidv4(),
-      // 		name: 'Instagram',
-      // 		icon: <FiInstagram />,
-      // 		url: 'https://instagram.com/realstoman',
-      // 	},
-      // 	{
-      // 		id: uuidv4(),
-      // 		name: 'Facebook',
-      // 		icon: <FiFacebook />,
-      // 		url: 'https://facebook.com/',
-      // 	},
-      // 	{
-      // 		id: uuidv4(),
-      // 		name: 'LinkedIn',
-      // 		icon: <FiLinkedin />,
-      // 		url: 'https://linkedin.com/',
-      // 	},
-      // 	{
-      // 		id: uuidv4(),
-      // 		name: 'Youtube',
-      // 		icon: <FiYoutube />,
-      // 		url: 'https://www.youtube.com/c/StomanStudio',
-      // 	},
-      // ],
     },
   },
   {
@@ -266,16 +191,6 @@ export const projectsData = [
         title: "Blog App",
         img: "/images/blogapp",
       },
-      //   {
-      //     id: uuidv4(),
-      //     title: "Kabul Project Management UI",
-      //     img: "/images/web-project-2.jpg",
-      //   },
-      //   {
-      //     id: uuidv4(),
-      //     title: "Kabul Project Management UI",
-      //     img: "/images/mobile-project-2.jpg",
-      //   },
     ],
     ProjectInfo: {
       ClientHeading: "About Client",
@@ -283,37 +198,36 @@ export const projectsData = [
         {
           id: uuidv4(),
           title: "Name",
-          details: "Company Ltd",
+          details: "Personal Blog Platform",
         },
         {
           id: uuidv4(),
           title: "Services",
-          details: "UI Design & Frontend Development",
+          details: "Content Management & Blogging",
         },
         {
           id: uuidv4(),
           title: "Website",
-          details: "https://company.com",
+          details: "Personal Project",
         },
         {
           id: uuidv4(),
           title: "Phone",
-          details: "555 8888 888",
+          details: "Contact via GitHub",
         },
       ],
       ObjectivesHeading: "Objective",
       ObjectivesDetails:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, natus! Quibusdam enim quod in esse, mollitia molestias incidunt quas ipsa accusamus veniam.",
+        "A full-stack blog application built with Next.js, PostgreSQL, and Tailwind CSS. Features include user authentication, content management, and a modern responsive design.",
       Technologies: [
         {
           title: "Tools & Technologies",
           techs: [
-            "HTML",
-            "CSS",
-            "JavaScript",
-            "Vue.js",
-            "TailwindCSS",
-            "AdobeXD",
+            "Next.js",
+            "PostgreSQL",
+            "Tailwind CSS",
+            "Authentication",
+            "Full-stack Development",
           ],
         },
       ],
@@ -322,57 +236,25 @@ export const projectsData = [
         {
           id: uuidv4(),
           details:
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.",
+            "Developed a complete blog platform from scratch, implementing both frontend and backend functionality. The project required database design, user authentication, and content management systems.",
         },
         {
           id: uuidv4(),
           details:
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?",
+            "Integrated PostgreSQL database for reliable data storage and management, ensuring data integrity and performance.",
         },
         {
           id: uuidv4(),
           details:
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?",
+            "Implemented user authentication and authorization systems to provide secure access to blog features and content management.",
         },
         {
           id: uuidv4(),
           details:
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.",
+            "Used Tailwind CSS for rapid UI development while maintaining a clean and professional design that enhances the reading experience.",
         },
       ],
       SocialSharingHeading: "Share This",
-      // SocialSharing: [
-      // 	{
-      // 		id: uuidv4(),
-      // 		name: 'Twitter',
-      // 		icon: <FiTwitter />,
-      // 		url: 'https://twitter.com/realstoman',
-      // 	},
-      // 	{
-      // 		id: uuidv4(),
-      // 		name: 'Instagram',
-      // 		icon: <FiInstagram />,
-      // 		url: 'https://instagram.com/realstoman',
-      // 	},
-      // 	{
-      // 		id: uuidv4(),
-      // 		name: 'Facebook',
-      // 		icon: <FiFacebook />,
-      // 		url: 'https://facebook.com/',
-      // 	},
-      // 	{
-      // 		id: uuidv4(),
-      // 		name: 'LinkedIn',
-      // 		icon: <FiLinkedin />,
-      // 		url: 'https://linkedin.com/',
-      // 	},
-      // 	{
-      // 		id: uuidv4(),
-      // 		name: 'Youtube',
-      // 		icon: <FiYoutube />,
-      // 		url: 'https://www.youtube.com/c/StomanStudio',
-      // 	},
-      // ],
     },
   },
   {
@@ -394,16 +276,6 @@ export const projectsData = [
         title: "El almacen",
         img: "/images/almacen1.jpg",
       },
-      //   {
-      //     id: uuidv4(),
-      //     title: "Kabul Cloud Storage Platform",
-      //     img: "/images/web-project-2.jpg",
-      //   },
-      //   {
-      //     id: uuidv4(),
-      //     title: "Kabul Cloud Storage Platform",
-      //     img: "/images/mobile-project-2.jpg",
-      //   },
     ],
     ProjectInfo: {
       ClientHeading: "About Client",
@@ -411,38 +283,31 @@ export const projectsData = [
         {
           id: uuidv4(),
           title: "Name",
-          details: "Company Ltd",
+          details: "El Almacen Store",
         },
         {
           id: uuidv4(),
           title: "Services",
-          details: "UI Design & Frontend Development",
+          details: "Retail & E-commerce",
         },
         {
           id: uuidv4(),
           title: "Website",
-          details: "https://company.com",
+          details: "https://elalmacenjs.netlify.app/",
         },
         {
           id: uuidv4(),
           title: "Phone",
-          details: "555 8888 888",
+          details: "Contact via website",
         },
       ],
       ObjectivesHeading: "Objective",
       ObjectivesDetails:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, natus! Quibusdam enim quod in esse, mollitia molestias incidunt quas ipsa accusamus veniam.",
+        "A retail store website built with HTML and CSS. Features include product showcase, store information, and a clean, professional design for local business.",
       Technologies: [
         {
           title: "Tools & Technologies",
-          techs: [
-            "HTML",
-            "CSS",
-            "JavaScript",
-            "Vue.js",
-            "TailwindCSS",
-            "AdobeXD",
-          ],
+          techs: ["HTML5", "CSS3", "Responsive Design", "Static Website"],
         },
       ],
       ProjectDetailsHeading: "Challenge",
@@ -450,57 +315,25 @@ export const projectsData = [
         {
           id: uuidv4(),
           details:
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.",
+            "Created a professional retail store website using only HTML and CSS, demonstrating strong fundamentals in web development and design principles.",
         },
         {
           id: uuidv4(),
           details:
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?",
+            "Implemented responsive design to ensure the website works perfectly on all devices, from mobile phones to desktop computers.",
         },
         {
           id: uuidv4(),
           details:
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?",
+            "Designed an intuitive layout that effectively showcases products and store information while maintaining excellent user experience.",
         },
         {
           id: uuidv4(),
           details:
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.",
+            "The project showcases clean, semantic HTML structure and well-organized CSS styling, demonstrating attention to code quality and best practices.",
         },
       ],
       SocialSharingHeading: "Share This",
-      // SocialSharing: [
-      // 	{
-      // 		id: uuidv4(),
-      // 		name: 'Twitter',
-      // 		icon: <FiTwitter />,
-      // 		url: 'https://twitter.com/realstoman',
-      // 	},
-      // 	{
-      // 		id: uuidv4(),
-      // 		name: 'Instagram',
-      // 		icon: <FiInstagram />,
-      // 		url: 'https://instagram.com/realstoman',
-      // 	},
-      // 	{
-      // 		id: uuidv4(),
-      // 		name: 'Facebook',
-      // 		icon: <FiFacebook />,
-      // 		url: 'https://facebook.com/',
-      // 	},
-      // 	{
-      // 		id: uuidv4(),
-      // 		name: 'LinkedIn',
-      // 		icon: <FiLinkedin />,
-      // 		url: 'https://linkedin.com/',
-      // 	},
-      // 	{
-      // 		id: uuidv4(),
-      // 		name: 'Youtube',
-      // 		icon: <FiYoutube />,
-      // 		url: 'https://www.youtube.com/c/StomanStudio',
-      // 	},
-      // ],
     },
   },
   {
@@ -539,37 +372,36 @@ export const projectsData = [
         {
           id: uuidv4(),
           title: "Name",
-          details: "Company Ltd",
+          details: "Educational Game",
         },
         {
           id: uuidv4(),
           title: "Services",
-          details: "UI Design & Frontend Development",
+          details: "Interactive Learning & Entertainment",
         },
         {
           id: uuidv4(),
           title: "Website",
-          details: "https://company.com",
+          details: "https://guessthecolorrgb.netlify.app/",
         },
         {
           id: uuidv4(),
           title: "Phone",
-          details: "555 8888 888",
+          details: "Play online",
         },
       ],
       ObjectivesHeading: "Objective",
       ObjectivesDetails:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, natus! Quibusdam enim quod in esse, mollitia molestias incidunt quas ipsa accusamus veniam.",
+        "An interactive color guessing game built with vanilla JavaScript. Players guess RGB color values while learning about web colors and improving their color recognition skills.",
       Technologies: [
         {
           title: "Tools & Technologies",
           techs: [
-            "HTML",
-            "CSS",
-            "JavaScript",
-            "Vue.js",
-            "TailwindCSS",
-            "AdobeXD",
+            "HTML5",
+            "CSS3",
+            "Vanilla JavaScript",
+            "Game Development",
+            "Interactive Design",
           ],
         },
       ],
@@ -578,57 +410,25 @@ export const projectsData = [
         {
           id: uuidv4(),
           details:
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.",
+            "Developed an engaging educational game that teaches RGB color theory through interactive gameplay. The challenge was to create an intuitive interface that makes learning fun and accessible.",
         },
         {
           id: uuidv4(),
           details:
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?",
+            "Implemented game logic using vanilla JavaScript, including random color generation, score tracking, and difficulty levels to enhance user engagement.",
         },
         {
           id: uuidv4(),
           details:
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?",
+            "Created a responsive design that works seamlessly across different devices, ensuring the game is accessible to users on mobile, tablet, and desktop.",
         },
         {
           id: uuidv4(),
           details:
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.",
+            "The project demonstrates strong JavaScript fundamentals and creative problem-solving skills in game development and user interface design.",
         },
       ],
       SocialSharingHeading: "Share This",
-      // SocialSharing: [
-      // 	{
-      // 		id: uuidv4(),
-      // 		name: 'Twitter',
-      // 		icon: <FiTwitter />,
-      // 		url: 'https://twitter.com/realstoman',
-      // 	},
-      // 	{
-      // 		id: uuidv4(),
-      // 		name: 'Instagram',
-      // 		icon: <FiInstagram />,
-      // 		url: 'https://instagram.com/realstoman',
-      // 	},
-      // 	{
-      // 		id: uuidv4(),
-      // 		name: 'Facebook',
-      // 		icon: <FiFacebook />,
-      // 		url: 'https://facebook.com/',
-      // 	},
-      // 	{
-      // 		id: uuidv4(),
-      // 		name: 'LinkedIn',
-      // 		icon: <FiLinkedin />,
-      // 		url: 'https://linkedin.com/',
-      // 	},
-      // 	{
-      // 		id: uuidv4(),
-      // 		name: 'Youtube',
-      // 		icon: <FiYoutube />,
-      // 		url: 'https://www.youtube.com/c/realstoman',
-      // 	},
-      // ],
     },
   },
   {
@@ -640,26 +440,16 @@ export const projectsData = [
     img: "/images/oc.JPG",
     technologies: ["React", "CSS", "Firebase"],
     ProjectHeader: {
-      title: "Apple New Design System",
-      publishDate: "Jul 26, 2021",
-      tags: "Frontend",
+      title: "Otro Cielo Jewelry",
+      publishDate: "2022",
+      tags: "E-commerce",
     },
     ProjectImages: [
       {
         id: uuidv4(),
-        title: "Kabul Apple New Design System",
+        title: "Otro Cielo Jewelry Store",
         img: "/images/ui-project-1.jpg",
       },
-      // {
-      //   id: uuidv4(),
-      //   title: "Kabul Apple New Design System",
-      //   img: "/images/web-project-2.jpg",
-      // },
-      // {
-      //   id: uuidv4(),
-      //   title: "Kabul Apple New Design System",
-      //   img: "/images/mobile-project-2.jpg",
-      // },
     ],
     ProjectInfo: {
       ClientHeading: "About Client",
@@ -667,37 +457,36 @@ export const projectsData = [
         {
           id: uuidv4(),
           title: "Name",
-          details: "Company Ltd",
+          details: "Otro Cielo Jewelry",
         },
         {
           id: uuidv4(),
           title: "Services",
-          details: "UI Design & Frontend Development",
+          details: "Jewelry & Accessories",
         },
         {
           id: uuidv4(),
           title: "Website",
-          details: "https://company.com",
+          details: "https://otrocielostore.netlify.app/",
         },
         {
           id: uuidv4(),
           title: "Phone",
-          details: "555 8888 888",
+          details: "Contact via website",
         },
       ],
       ObjectivesHeading: "Objective",
       ObjectivesDetails:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, natus! Quibusdam enim quod in esse, mollitia molestias incidunt quas ipsa accusamus veniam.",
+        "A modern e-commerce jewelry store built with React, CSS, and Firebase. Features include product catalog, shopping cart functionality, and secure payment processing.",
       Technologies: [
         {
           title: "Tools & Technologies",
           techs: [
-            "HTML",
+            "React",
             "CSS",
-            "JavaScript",
-            "Vue.js",
-            "TailwindCSS",
-            "AdobeXD",
+            "Firebase",
+            "E-commerce",
+            "Payment Integration",
           ],
         },
       ],
@@ -706,57 +495,25 @@ export const projectsData = [
         {
           id: uuidv4(),
           details:
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.",
+            "Developed a complete e-commerce platform for a jewelry store, implementing product management, shopping cart functionality, and secure payment processing using Firebase services.",
         },
         {
           id: uuidv4(),
           details:
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?",
+            "Integrated Firebase for backend services including authentication, database management, and payment processing to create a scalable and secure e-commerce solution.",
         },
         {
           id: uuidv4(),
           details:
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?",
+            "Created an elegant and professional design that showcases jewelry products effectively while providing an excellent shopping experience for customers.",
         },
         {
           id: uuidv4(),
           details:
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.",
+            "The project demonstrates full-stack development capabilities with React frontend and Firebase backend, showcasing modern web development practices and e-commerce functionality.",
         },
       ],
       SocialSharingHeading: "Share This",
-      // SocialSharing: [
-      // 	{
-      // 		id: uuidv4(),
-      // 		name: 'Twitter',
-      // 		icon: <FiTwitter />,
-      // 		url: 'https://twitter.com/realstoman',
-      // 	},
-      // 	{
-      // 		id: uuidv4(),
-      // 		name: 'Instagram',
-      // 		icon: <FiInstagram />,
-      // 		url: 'https://instagram.com/realstoman',
-      // 	},
-      // 	{
-      // 		id: uuidv4(),
-      // 		name: 'Facebook',
-      // 		icon: <FiFacebook />,
-      // 		url: 'https://facebook.com/',
-      // 	},
-      // 	{
-      // 		id: uuidv4(),
-      // 		name: 'LinkedIn',
-      // 		icon: <FiLinkedin />,
-      // 		url: 'https://linkedin.com/',
-      // 	},
-      // 	{
-      // 		id: uuidv4(),
-      // 		name: 'Youtube',
-      // 		icon: <FiYoutube />,
-      // 		url: 'https://www.youtube.com/c/StomanStudio',
-      // 	},
-      // ],
     },
   },
 ];
