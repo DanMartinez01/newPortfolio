@@ -2,6 +2,6 @@ require("dotenv").config();
 module.exports = {
   reactStrictMode: true,
   env: {
-    GEMINI_API_KEY: process.env.GEMINI_API_KEY,
+    COHERE_API_KEY: process.env.COHERE_API_KEY,
   },
 };

@@ -1,0 +1,119 @@
+/* Custom Chatbase Chatbot Styling */
+#chatbase-widget {
+  /* Match your portfolio's dark theme */
+  --cb-primary-color: #1f2937 !important;
+  --cb-secondary-color: #6b7280 !important;
+  --cb-text-color: #ffffff !important;
+  --cb-background-color: #111827 !important;
+  --cb-border-color: #374151 !important;
+  --cb-shadow: 0 10px 25px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Chatbot button styling */
+#chatbase-widget .cb-widget-button {
+  background: linear-gradient(135deg, #1f2937 0%, #374151 100%) !important;
+  border: 2px solid #6b7280 !important;
+  border-radius: 50% !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3) !important;
+  transition: all 0.3s ease !important;
+}
+
+#chatbase-widget .cb-widget-button:hover {
+  transform: scale(1.1) !important;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* Chat window styling */
+#chatbase-widget .cb-widget-container {
+  background: rgba(17, 24, 39, 0.95) !important;
+  backdrop-filter: blur(20px) !important;
+  border: 1px solid #374151 !important;
+  border-radius: 20px !important;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* Message bubbles */
+#chatbase-widget .cb-message {
+  border-radius: 15px !important;
+  margin: 8px 0 !important;
+}
+
+#chatbase-widget .cb-user-message {
+  background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%) !important;
+  color: white !important;
+}
+
+#chatbase-widget .cb-bot-message {
+  background: rgba(55, 65, 81, 0.8) !important;
+  color: #f3f4f6 !important;
+  border: 1px solid #4b5563 !important;
+}
+
+/* Input field styling */
+#chatbase-widget .cb-input-container {
+  background: rgba(31, 41, 55, 0.8) !important;
+  border: 1px solid #4b5563 !important;
+  border-radius: 15px !important;
+}
+
+#chatbase-widget .cb-input {
+  background: transparent !important;
+  color: #f3f4f6 !important;
+  border: none !important;
+}
+
+#chatbase-widget .cb-input::placeholder {
+  color: #9ca3af !important;
+}
+
+/* Send button */
+#chatbase-widget .cb-send-button {
+  background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%) !important;
+  border-radius: 50% !important;
+  transition: all 0.3s ease !important;
+}
+
+#chatbase-widget .cb-send-button:hover {
+  transform: scale(1.1) !important;
+  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4) !important;
+}
+
+/* Header styling */
+#chatbase-widget .cb-header {
+  background: linear-gradient(135deg, #1f2937 0%, #374151 100%) !important;
+  border-bottom: 1px solid #4b5563 !important;
+  border-radius: 20px 20px 0 0 !important;
+}
+
+#chatbase-widget .cb-header-title {
+  color: #f3f4f6 !important;
+  font-weight: 600 !important;
+}
+
+/* Typing indicator */
+#chatbase-widget .cb-typing-indicator {
+  background: rgba(55, 65, 81, 0.8) !important;
+  border-radius: 15px !important;
+}
+
+/* Scrollbar styling */
+#chatbase-widget .cb-messages-container::-webkit-scrollbar {
+  width: 6px !important;
+}
+
+#chatbase-widget .cb-messages-container::-webkit-scrollbar-track {
+  background: rgba(31, 41, 55, 0.5) !important;
+  border-radius: 3px !important;
+}
+
+#chatbase-widget .cb-messages-container::-webkit-scrollbar-thumb {
+  background: #6b7280 !important;
+  border-radius: 3px !important;
+}
+
+#chatbase-widget .cb-messages-container::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af !important;
+}
+
+
+

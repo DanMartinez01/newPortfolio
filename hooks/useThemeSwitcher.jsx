@@ -1,20 +1,30 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 
 const useThemeSwitcher = () => {
-	const [theme, setTheme] = useState(
-		typeof window !== 'undefined' ? localStorage.theme : ''
-	);
-	const activeTheme = theme === 'dark' ? 'light' : 'dark';
+  const [theme, setTheme] = useState(() => {
+    if (typeof window !== "undefined") {
+      // Check if user has a saved preference
+      const savedTheme = localStorage.theme;
+      if (savedTheme) {
+        return savedTheme;
+      }
+      // Default to dark mode if no preference is saved
+      return "dark";
+    }
+    return "dark"; // Default for SSR
+  });
 
-	useEffect(() => {
-		const root = window.document.documentElement;
+  const activeTheme = theme === "dark" ? "light" : "dark";
 
-		root.classList.remove(activeTheme);
-		root.classList.add(theme);
-		localStorage.setItem('theme', theme);
-	}, [theme, activeTheme]);
+  useEffect(() => {
+    const root = window.document.documentElement;
 
-	return [activeTheme, setTheme];
+    root.classList.remove(activeTheme);
+    root.classList.add(theme);
+    localStorage.setItem("theme", theme);
+  }, [theme, activeTheme]);
+
+  return [activeTheme, setTheme];
 };
 
 export default useThemeSwitcher;

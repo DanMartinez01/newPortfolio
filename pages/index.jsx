@@ -26,8 +26,7 @@ import ProjectsGrid from "../components/projects/ProjectsGrid";
 import AppBanner from "../components/shared/AppBanner";
 import SkillsSection from "../components/shared/SkillsSection";
 import CallToAction from "../components/shared/CallToAction";
-import Chat from "../components/Chat";
-import FloatingBubble from "../components/FloatingBubble";
+
 import dynamic from "next/dynamic";
 
 const Scene = dynamic(() => import("../components/Scene"), {
@@ -43,7 +42,6 @@ export default function Home() {
       <SkillsSection />
       <ProjectsGrid />
       <CallToAction />
-      <FloatingBubble />
     </div>
   );
 }
