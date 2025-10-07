@@ -28,7 +28,7 @@ function AboutMeBio() {
             repeat: Infinity,
             ease: "easeInOut",
           }}
-          className="absolute top-20 left-10 w-32 h-32 bg-gradient-to-br from-indigo-400/20 to-purple-400/20 rounded-full blur-3xl"
+          className="absolute top-20 left-10 w-32 h-32 bg-gradient-to-br from-accent-dark/20 to-accent-light/20 rounded-full blur-3xl"
         />
         <motion.div
           animate={{
@@ -40,7 +40,7 @@ function AboutMeBio() {
             repeat: Infinity,
             ease: "easeInOut",
           }}
-          className="absolute top-40 right-20 w-40 h-40 bg-gradient-to-br from-blue-400/20 to-cyan-400/20 rounded-full blur-3xl"
+          className="absolute top-40 right-20 w-40 h-40 bg-gradient-to-br from-accent-light/20 to-accent-bright/20 rounded-full blur-3xl"
         />
         <motion.div
           animate={{
@@ -52,7 +52,7 @@ function AboutMeBio() {
             repeat: Infinity,
             ease: "easeInOut",
           }}
-          className="absolute bottom-40 left-1/4 w-24 h-24 bg-gradient-to-br from-purple-400/20 to-pink-400/20 rounded-full blur-3xl"
+          className="absolute bottom-40 left-1/4 w-24 h-24 bg-gradient-to-br from-accent-dark/20 to-accent-bright/20 rounded-full blur-3xl"
         />
       </div>
 
@@ -93,7 +93,7 @@ function AboutMeBio() {
                       className="rounded-full h-48 w-48 object-cover shadow-2xl"
                       alt="Daniela Martinez"
                     />
-                    <div className="absolute inset-0 rounded-full bg-gradient-to-br from-indigo-400/20 to-purple-400/20"></div>
+                    <div className="absolute inset-0 rounded-full bg-gradient-to-br from-accent-dark/20 to-accent-light/20"></div>
                   </div>
                   <div className="absolute -bottom-2 -right-2 w-6 h-6 bg-green-500 rounded-full border-4 border-white/80 dark:border-gray-800/80 shadow-lg"></div>
                 </div>
@@ -108,11 +108,11 @@ function AboutMeBio() {
               {/* Contact Info */}
               <div className="space-y-4 mb-8">
                 <div className="flex items-center text-gray-600 dark:text-gray-300 p-3 rounded-lg backdrop-blur-sm bg-white/30 dark:bg-gray-700/30 border border-white/20 dark:border-gray-600/20">
-                  <FiMapPin className="mr-3 text-indigo-500" />
+                  <FiMapPin className="mr-3 text-accent-bright" />
                   <span>Argentina</span>
                 </div>
                 <div className="flex items-center text-gray-600 dark:text-gray-300 p-3 rounded-lg backdrop-blur-sm bg-white/30 dark:bg-gray-700/30 border border-white/20 dark:border-gray-600/20">
-                  <FiCalendar className="mr-3 text-indigo-500" />
+                  <FiCalendar className="mr-3 text-accent-bright" />
                   <span>Available for opportunities</span>
                 </div>
               </div>
@@ -126,7 +126,7 @@ function AboutMeBio() {
                 <a
                   download="CV_Resume.pdf"
                   href="/files/CV_Resume.pdf"
-                  className="w-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-semibold py-3 px-6 rounded-lg flex items-center justify-center hover:from-indigo-700 hover:to-purple-700 transition-all duration-200 shadow-lg"
+                  className="w-full bg-gradient-to-r from-accent-dark to-accent-light text-white font-semibold py-3 px-6 rounded-lg flex items-center justify-center hover:from-accent-light hover:to-accent-bright transition-all duration-200 shadow-lg"
                   aria-label="Download Resume"
                 >
                   <FiArrowDownCircle className="mr-2" />
@@ -142,7 +142,7 @@ function AboutMeBio() {
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
-                  className="text-gray-600 dark:text-gray-300 hover:text-indigo-500 transition-colors p-2 rounded-lg hover:bg-white/30 dark:hover:bg-gray-600/30"
+                  className="text-gray-600 dark:text-gray-300 hover:text-accent-bright transition-colors p-2 rounded-lg hover:bg-white/30 dark:hover:bg-gray-600/30"
                 >
                   <FiGithub className="text-xl" />
                 </motion.a>
@@ -150,7 +150,7 @@ function AboutMeBio() {
                   href="mailto:your-email@example.com"
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
-                  className="text-gray-600 dark:text-gray-300 hover:text-indigo-500 transition-colors p-2 rounded-lg hover:bg-white/30 dark:hover:bg-gray-600/30"
+                  className="text-gray-600 dark:text-gray-300 hover:text-accent-bright transition-colors p-2 rounded-lg hover:bg-white/30 dark:hover:bg-gray-600/30"
                 >
                   <FiMail className="text-xl" />
                 </motion.a>
@@ -160,7 +160,7 @@ function AboutMeBio() {
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
-                  className="text-gray-600 dark:text-gray-300 hover:text-indigo-500 transition-colors p-2 rounded-lg hover:bg-white/30 dark:hover:bg-gray-600/30"
+                  className="text-gray-600 dark:text-gray-300 hover:text-accent-bright transition-colors p-2 rounded-lg hover:bg-white/30 dark:hover:bg-gray-600/30"
                 >
                   <FiLinkedin className="text-xl" />
                 </motion.a>
@@ -221,7 +221,7 @@ function AboutMeBio() {
                       initial={{ opacity: 0, scale: 0.8 }}
                       animate={{ opacity: 1, scale: 1 }}
                       transition={{ duration: 0.3, delay: 1 + index * 0.05 }}
-                      className="px-3 py-2 backdrop-blur-md bg-indigo-100/40 dark:bg-indigo-900/40 text-indigo-700 dark:text-indigo-300 rounded-lg text-sm font-medium border border-indigo-200/50 dark:border-indigo-700/50 hover:bg-indigo-200/60 dark:hover:bg-indigo-800/60 transition-all duration-200"
+                      className="px-3 py-2 backdrop-blur-md bg-accent-dark/40 dark:bg-accent-dark/40 text-accent-bright dark:text-accent-bright rounded-lg text-sm font-medium border border-accent-light/50 dark:border-accent-light/50 hover:bg-accent-light/60 dark:hover:bg-accent-light/60 transition-all duration-200"
                     >
                       {skill}
                     </motion.span>

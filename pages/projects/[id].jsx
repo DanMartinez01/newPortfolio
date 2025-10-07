@@ -68,7 +68,7 @@ function ProjectSingle(props) {
                       href="https://stoman.me"
                       className={
                         info.title === "Website" || info.title === "Phone"
-                          ? "hover:underline hover:text-indigo-500 dark:hover:text-indigo-400 cursor-pointer duration-300"
+                          ? "hover:underline hover:text-accent-bright dark:hover:text-accent-bright cursor-pointer duration-300"
                           : ""
                       }
                       aria-label="Project Website and Phone"

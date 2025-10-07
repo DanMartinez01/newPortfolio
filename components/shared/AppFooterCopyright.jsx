@@ -5,7 +5,7 @@ function AppFooterCopyright() {
         <a
           href="https://www.linkedin.com/in/danielaluciamartinez/"
           target="__blank"
-          className="text-secondary-dark dark:text-secondary-light font-medium  hover:underline hover:text-indigo-600 dark:hover:text-indigo-300 ml-1 duration-500"
+          className="text-secondary-dark dark:text-secondary-light font-medium  hover:underline hover:text-accent-bright dark:hover:text-accent-bright ml-1 duration-500"
         >
           Daniela Martinez
         </a>

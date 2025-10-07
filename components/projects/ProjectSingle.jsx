@@ -44,7 +44,7 @@ const ProjectSingle = (props) => {
         {/* Project Content */}
         <div className="p-6">
           {/* Title */}
-          <h3 className="text-xl font-bold font-mono text-gray-800 dark:text-white mb-3 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors duration-300">
+          <h3 className="text-xl font-bold font-mono text-gray-800 dark:text-white mb-3 group-hover:text-accent-bright dark:group-hover:text-accent-bright transition-colors duration-300">
             {props.title}
           </h3>
 
@@ -82,7 +82,7 @@ const ProjectSingle = (props) => {
         </div>
 
         {/* Hover Effect Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/5 to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-br from-accent-dark/5 to-accent-light/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl pointer-events-none" />
       </div>
     </motion.div>
   );

@@ -97,7 +97,7 @@ const ChatbotWidget = () => {
       {/* Chat Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed bottom-6 right-6 w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 z-50 flex items-center justify-center"
+        className="fixed bottom-6 right-6 w-16 h-16 bg-white/20 backdrop-blur-md border border-white/30 text-white rounded-full shadow-lg hover:shadow-xl hover:bg-white/30 transition-all duration-300 z-50 flex items-center justify-center"
         style={{ transform: isOpen ? "rotate(180deg)" : "rotate(0deg)" }}
       >
         <svg
@@ -118,7 +118,7 @@ const ChatbotWidget = () => {
       {isOpen && (
         <div className="fixed bottom-24 right-6 w-96 h-[500px] bg-white dark:bg-gray-800 rounded-2xl shadow-2xl border border-gray-200 dark:border-gray-700 z-40 flex flex-col">
           {/* Header */}
-          <div className="flex items-center justify-between p-4 border-b border-gray-200 dark:border-gray-700 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-t-2xl">
+          <div className="flex items-center justify-between p-4 border-b border-gray-200 dark:border-gray-700 bg-white/10 backdrop-blur-md border border-white/20 text-white rounded-t-2xl">
             <h3 className="font-semibold">AI Assistant</h3>
             <div className="flex items-center gap-2">
               <button

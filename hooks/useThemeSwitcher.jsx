@@ -4,7 +4,7 @@ const useThemeSwitcher = () => {
   const [theme, setTheme] = useState(() => {
     if (typeof window !== "undefined") {
       // Check if user has a saved preference
-      const savedTheme = localStorage.theme;
+      const savedTheme = localStorage.getItem("theme");
       if (savedTheme) {
         return savedTheme;
       }
@@ -16,15 +16,26 @@ const useThemeSwitcher = () => {
 
   const activeTheme = theme === "dark" ? "light" : "dark";
 
+  const setThemeAndUpdate = (newTheme) => {
+    setTheme(newTheme);
+
+    if (typeof window !== "undefined") {
+      const root = window.document.documentElement;
+      root.classList.remove("light", "dark");
+      root.classList.add(newTheme);
+      localStorage.setItem("theme", newTheme);
+    }
+  };
+
   useEffect(() => {
-    const root = window.document.documentElement;
+    if (typeof window !== "undefined") {
+      const root = window.document.documentElement;
+      root.classList.remove("light", "dark");
+      root.classList.add(theme);
+    }
+  }, [theme]);
 
-    root.classList.remove(activeTheme);
-    root.classList.add(theme);
-    localStorage.setItem("theme", theme);
-  }, [theme, activeTheme]);
-
-  return [activeTheme, setTheme];
+  return [activeTheme, setThemeAndUpdate];
 };
 
 export default useThemeSwitcher;

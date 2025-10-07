@@ -1,17 +1,61 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
-import useThemeSwitcher from "../../hooks/useThemeSwitcher";
 import Monkey from "../Monkey";
 import Space from "../Space";
 import Asteroid from "../Asteroid";
 import dynamic from "next/dynamic";
+import { useEffect, useState } from "react";
 
 const SceneTool = dynamic(() => import("../SceneTool"), {
   ssr: false,
 });
 
 function AppBanner() {
-  const [activeTheme] = useThemeSwitcher();
+  const [currentTheme, setCurrentTheme] = useState("dark");
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+    // Get current theme from document
+    const htmlClasses = document.documentElement.classList;
+    if (htmlClasses.contains("light")) {
+      setCurrentTheme("light");
+    } else if (htmlClasses.contains("dark")) {
+      setCurrentTheme("dark");
+    } else {
+      // Default to dark if no class is set
+      document.documentElement.classList.add("dark");
+      setCurrentTheme("dark");
+    }
+  }, []);
+
+  // Listen for theme changes
+  useEffect(() => {
+    const observer = new MutationObserver((mutations) => {
+      mutations.forEach((mutation) => {
+        if (
+          mutation.type === "attributes" &&
+          mutation.attributeName === "class"
+        ) {
+          const htmlClasses = document.documentElement.classList;
+          if (htmlClasses.contains("light")) {
+            setCurrentTheme("light");
+          } else if (htmlClasses.contains("dark")) {
+            setCurrentTheme("dark");
+          }
+        }
+      });
+    });
+
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ["class"],
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
+  if (!mounted) return null;
 
   return (
     <motion.section
@@ -32,7 +76,7 @@ function AppBanner() {
             repeat: Infinity,
             ease: "easeInOut",
           }}
-          className="absolute top-10 left-20 w-24 h-24 bg-gradient-to-br from-blue-400/20 to-cyan-400/20 rounded-full blur-2xl"
+          className="absolute top-10 left-20 w-24 h-24 bg-gradient-to-br from-accent-dark/20 to-accent-light/20 rounded-full blur-2xl"
         />
         <motion.div
           animate={{
@@ -44,7 +88,7 @@ function AppBanner() {
             repeat: Infinity,
             ease: "easeInOut",
           }}
-          className="absolute top-20 right-32 w-32 h-32 bg-gradient-to-br from-purple-400/20 to-pink-400/20 rounded-full blur-3xl"
+          className="absolute top-20 right-32 w-32 h-32 bg-gradient-to-br from-accent-light/20 to-accent-bright/20 rounded-full blur-3xl"
         />
       </div>
       <div className="w-full md:w-1/3 text-left">
@@ -56,7 +100,9 @@ function AppBanner() {
             duration: 0.9,
             delay: 0.1,
           }}
-          className="font-general-semibold text-2xl lg:text-3xl xl:text-4xl text-center sm:text-left text-ternary-dark dark:text-primary-light uppercase"
+          className={`font-general-semibold text-2xl lg:text-3xl xl:text-4xl text-center sm:text-left uppercase ${
+            currentTheme === "dark" ? "text-text-primary" : "text-primary-dark"
+          }`}
         >
           Hi There! 👋
         </motion.h1>
@@ -68,7 +114,11 @@ function AppBanner() {
             duration: 0.9,
             delay: 0.2,
           }}
-          className="font-general-medium mt-4 text-lg md:text-xl lg:text-2xl xl:text-3xl text-center sm:text-left leading-normal text-gray-500 dark:text-gray-200"
+          className={`font-general-medium mt-4 text-lg md:text-xl lg:text-2xl xl:text-3xl text-center sm:text-left leading-normal ${
+            currentTheme === "dark"
+              ? "text-text-primary"
+              : "text-secondary-dark"
+          }`}
         >
           I'm Daniela, a passionate Full-Stack Developer & former ESL teacher
         </motion.p>
@@ -80,7 +130,11 @@ function AppBanner() {
             duration: 0.9,
             delay: 0.3,
           }}
-          className="font-general-medium mt-2 text-base md:text-lg lg:text-xl text-center sm:text-left leading-normal text-gray-400 dark:text-gray-300"
+          className={`font-general-medium mt-2 text-base md:text-lg lg:text-xl text-center sm:text-left leading-normal ${
+            currentTheme === "dark"
+              ? "text-text-secondary"
+              : "text-ternary-dark"
+          }`}
         >
           Turning ideas into beautiful, functional web applications
         </motion.p>

@@ -15,6 +15,21 @@ export default async function handler(req, res) {
     // Get Cohere API key
     const cohereApiKey = process.env.COHERE_API_KEY;
 
+    // Enhanced debugging for production
+    console.log("=== PRODUCTION DEBUG ===");
+    console.log("Environment:", process.env.NODE_ENV);
+    console.log("Has API Key:", !!cohereApiKey);
+    console.log("API Key Length:", cohereApiKey ? cohereApiKey.length : 0);
+    console.log(
+      "API Key Prefix:",
+      cohereApiKey ? cohereApiKey.substring(0, 7) : "none"
+    );
+    console.log(
+      "All Env Vars:",
+      Object.keys(process.env).filter((key) => key.includes("COHERE"))
+    );
+    console.log("========================");
+
     console.log("Debug info:", {
       hasApiKey: !!cohereApiKey,
       apiKeyLength: cohereApiKey ? cohereApiKey.length : 0,
@@ -34,7 +49,7 @@ export default async function handler(req, res) {
 
     // Build a conversation prompt for the generate endpoint
     let prompt =
-      "You are Dani (Dani), a real person and web developer who owns this portfolio website. Respond as if you are Daniel speaking naturally about yourself, not as an AI assistant.\n\n" +
+      "You are Daniel (Dani), a real person and web developer who owns this portfolio website. Respond as if you are Daniel speaking naturally about yourself, not as an AI assistant.\n\n" +
       "Here's what you know about yourself:\n\n" +
       "- Your name is Dani\n" +
       "- You are from Argentina and you are 32 years old\n" +
