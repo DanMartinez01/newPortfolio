@@ -2,9 +2,15 @@ import React, { useEffect, useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaReact, FaGitSquare } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
-import { SiTypescript, SiTailwindcss, SiNextdotjs } from "react-icons/si";
+import {
+  SiTypescript,
+  SiTailwindcss,
+  SiNextdotjs,
+  SiChakraui,
+} from "react-icons/si";
 import techStack from "./techStack.json";
 import dynamic from "next/dynamic";
+
 function ProjectsTech() {
   const containerRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
@@ -140,7 +146,17 @@ function ProjectsTech() {
                   <FaGitSquare className="text-3xl text-orange-600" />
                 )}
                 {tech.icon === "SiNextdotjs" && (
-                  <SiNextdotjs className="text-3xl text-black dark:text-white" />
+                  <SiNextdotjs
+                    className={`text-3xl ${
+                      currentTheme === "dark" ? "text-white" : "text-black"
+                    }`}
+                  />
+                )}
+                {tech.icon === "SiChakraui" && (
+                  <SiChakraui className="text-3xl text-teal-400" />
+                )}
+                {tech.icon === "FaReactNative" && (
+                  <FaReact className="text-3xl text-blue-400" />
                 )}
               </div>
               <h4

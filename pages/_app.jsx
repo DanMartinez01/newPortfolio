@@ -25,7 +25,7 @@ function MyApp({ Component, pageProps }) {
           <Component {...pageProps} />
         </DefaultLayout>
         <UseScrollToTop />
-        <ChatbotWidget />
+        {/* <ChatbotWidget /> */}
       </div>
     </AnimatePresence>
   );

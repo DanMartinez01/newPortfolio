@@ -1,11 +1,10 @@
 [
-    { "name": "React", "icon": "FaReact" },
-    { "name": "JavaScript", "icon": "IoLogoJavascript" },
-    { "name": "Chakra UI", "icon": "FaReact" },
-    { "name": "Next.js", "icon": "RiNextjsFill" },
-    { "name": "TypeScript", "icon": "SiTypescript" },
-    { "name": "Tailwind CSS", "icon": "SiTailwindcss" },
-    { "name": "React Native", "icon": "FaReact" },
-    { "name": "Git", "icon": "FaGitSquare" }
-  ]
-  
+  { "name": "React", "icon": "FaReact" },
+  { "name": "JavaScript", "icon": "IoLogoJavascript" },
+  { "name": "Chakra UI", "icon": "SiChakraui" },
+  { "name": "Next.js", "icon": "SiNextdotjs" },
+  { "name": "TypeScript", "icon": "SiTypescript" },
+  { "name": "Tailwind CSS", "icon": "SiTailwindcss" },
+  { "name": "React Native", "icon": "FaReactNative" },
+  { "name": "Git", "icon": "FaGitSquare" }
+]

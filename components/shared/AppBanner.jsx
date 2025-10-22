@@ -1,8 +1,4 @@
 import { motion } from "framer-motion";
-import Image from "next/image";
-import Monkey from "../Monkey";
-import Space from "../Space";
-import Asteroid from "../Asteroid";
 import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
 
@@ -120,9 +116,9 @@ function AppBanner() {
               : "text-secondary-dark"
           }`}
         >
-          I'm Daniela, a passionate Full-Stack Developer & former ESL teacher
+          I'm Daniela, Front-End Developer & former ESL teacher
         </motion.p>
-        <motion.p
+        {/* <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{
@@ -137,7 +133,7 @@ function AppBanner() {
           }`}
         >
           Turning ideas into beautiful, functional web applications
-        </motion.p>
+        </motion.p> */}
       </div>
       <motion.div
         initial={{ opacity: 0, y: -180 }}

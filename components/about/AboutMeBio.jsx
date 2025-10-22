@@ -101,7 +101,7 @@ function AboutMeBio() {
                   Daniela Martinez
                 </h2>
                 <p className="text-gray-600 dark:text-gray-300">
-                  Full-Stack Developer
+                  Front-End Developer
                 </p>
               </div>
 
@@ -147,7 +147,7 @@ function AboutMeBio() {
                   <FiGithub className="text-xl" />
                 </motion.a>
                 <motion.a
-                  href="mailto:your-email@example.com"
+                  href="mailto:danimartinez233@gmail.com"
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
                   className="text-gray-600 dark:text-gray-300 hover:text-accent-bright transition-colors p-2 rounded-lg hover:bg-white/30 dark:hover:bg-gray-600/30"
@@ -206,15 +206,16 @@ function AboutMeBio() {
                 </h4>
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
                   {[
-                    "React Development",
-                    "Next.js Applications",
+                    "React",
+                    "Next.js",
+                    "Tailwind",
+                    "Chakra UI",
                     "TypeScript",
+                    "Git",
+                    "Responsive Design",
                     "PostgreSQL",
                     "Firebase",
-                    "UI/UX Design",
-                    "Responsive Design",
-                    "E-commerce",
-                    "API Development",
+                    "Strapi",
                   ].map((skill, index) => (
                     <motion.span
                       key={skill}

@@ -52,10 +52,10 @@ const CallToAction = () => {
 
   return (
     <section
-      className={`py-16 transition-all duration-300 relative overflow-hidden ${
+      className={`py-16 transition-all duration-300 relative overflow-hidden rounded-3xl ${
         currentTheme === "dark"
-          ? "bg-white/5 backdrop-blur-xl border-t border-b border-white/10"
-          : "bg-gray-100/50 backdrop-blur-lg border-t border-b border-gray-200/30"
+          ? "bg-white/5 backdrop-blur-xl border border-white/10"
+          : "bg-gray-100/50 backdrop-blur-lg border border-gray-200/30"
       }`}
     >
       <div className="container mx-auto px-4 text-center">
@@ -125,7 +125,7 @@ const CallToAction = () => {
               <FiGithub className="text-2xl" />
             </motion.a>
             <motion.a
-              href="https://linkedin.com/in/your-profile"
+              href="https://www.linkedin.com/in/danielaluciamartinez/"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.1 }}
