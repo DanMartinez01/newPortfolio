@@ -1,7 +1,7 @@
 "use client";
 import { Canvas } from "@react-three/fiber";
 import Model from "../SceneTool/Model";
-import { Environment, PerspectiveCamera } from "@react-three/drei";
+import { PerspectiveCamera } from "@react-three/drei";
 
 export default function index() {
   return (
@@ -17,8 +17,9 @@ export default function index() {
         position={[100, 100, 100]}
       />
       <Model />
+      <ambientLight intensity={0.5} />
       <directionalLight intensity={10} position={[0, 2, 3]} />
-      <Environment preset="city" />
+      <directionalLight intensity={5} position={[-2, -1, -1]} />
     </Canvas>
   );
 }
