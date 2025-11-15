@@ -2,9 +2,9 @@ import { motion } from "framer-motion";
 import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
 
-const SceneTool = dynamic(() => import("../SceneTool"), {
-  ssr: false,
-});
+// const SceneTool = dynamic(() => import("../SceneTool"), {
+//   ssr: false,
+// });
 
 function AppBanner() {
   const [currentTheme, setCurrentTheme] = useState("dark");
@@ -135,14 +135,14 @@ function AppBanner() {
           Turning ideas into beautiful, functional web applications
         </motion.p> */}
       </div>
-      <motion.div
+      {/* <motion.div
         initial={{ opacity: 0, y: -180 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ ease: "easeInOut", duration: 0.9, delay: 0.2 }}
         className="flex flex-col items-center justify-center"
       >
         <SceneTool />
-      </motion.div>
+      </motion.div> */}
     </motion.section>
   );
 }

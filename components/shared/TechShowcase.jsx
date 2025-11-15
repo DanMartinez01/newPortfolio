@@ -15,9 +15,9 @@ import { FaCertificate } from "react-icons/fa";
 import { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
 
-const SceneBolt = dynamic(() => import("../SceneBolt"), {
-  ssr: false,
-});
+// const SceneBolt = dynamic(() => import("../SceneBolt"), {
+//   ssr: false,
+// });
 
 const TechShowcase = () => {
   const [currentTheme, setCurrentTheme] = useState("dark");
@@ -261,14 +261,14 @@ const TechShowcase = () => {
         </div>
 
         {/* 3D Animation */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.5 }}
           className="flex justify-center mb-16"
         >
           <SceneBolt />
-        </motion.div>
+        </motion.div> */}
 
         {/* Certifications Section */}
         <motion.div

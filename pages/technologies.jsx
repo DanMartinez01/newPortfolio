@@ -1,7 +1,7 @@
 import React from "react";
 import PagesMetaHead from "../components/PagesMetaHead";
 import TechShowcase from "../components/shared/TechShowcase";
-import ProfessionalTimeline from "../components/shared/ProfessionalTimeline";
+// import ProfessionalTimeline from "../components/shared/ProfessionalTimeline";
 import LanguageSkills from "../components/shared/LanguageSkills";
 import CallToAction from "../components/shared/CallToAction";
 
@@ -31,7 +31,7 @@ export default function Technologies() {
       <LanguageSkills />
 
       {/* Professional Timeline */}
-      <ProfessionalTimeline />
+      {/* <ProfessionalTimeline /> */}
 
       {/* Call to Action */}
       <CallToAction />

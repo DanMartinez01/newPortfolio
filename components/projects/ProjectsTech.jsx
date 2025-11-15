@@ -17,9 +17,9 @@ function ProjectsTech() {
   const [currentTheme, setCurrentTheme] = useState("dark");
   const [mounted, setMounted] = useState(false);
 
-  const SceneBolt = dynamic(() => import("../SceneBolt"), {
-    ssr: false,
-  });
+  // const SceneBolt = dynamic(() => import("../SceneBolt"), {
+  //   ssr: false,
+  // });
 
   useEffect(() => {
     setMounted(true);
@@ -173,7 +173,7 @@ function ProjectsTech() {
         ))}
       </div>
 
-      {isVisible && (
+      {/* {isVisible && (
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -182,7 +182,7 @@ function ProjectsTech() {
         >
           <SceneBolt />
         </motion.div>
-      )}
+      )} */}
     </div>
   );
 }

@@ -7,14 +7,14 @@ import CallToAction from "../components/shared/CallToAction";
 
 import dynamic from "next/dynamic";
 
-const Scene = dynamic(() => import("../components/Scene"), {
-  ssr: false,
-});
+// const Scene = dynamic(() => import("../components/Scene"), {
+//   ssr: false,
+// });
 
 export default function Home() {
   return (
     <div className="container mx-auto space-y-16">
-      <Scene />
+      {/* <Scene /> */}
       <PagesMetaHead title="Home" />
       <AppBanner />
       <TechShowcase />
