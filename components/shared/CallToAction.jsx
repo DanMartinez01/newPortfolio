@@ -82,17 +82,19 @@ const CallToAction = () => {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-              <Link
-                href="/contact"
+              <a
+                href="https://www.linkedin.com/in/danielaluciamartinez"
+                target="_blank"
+                rel="noopener noreferrer"
                 className={`inline-flex items-center px-8 py-3 font-semibold rounded-lg shadow-lg transition-all duration-200 ${
                   currentTheme === "dark"
                     ? "bg-white/20 backdrop-blur-md border border-white/30 text-white hover:bg-white/30"
                     : "bg-gray-200/80 backdrop-blur-sm border border-gray-300/50 text-gray-800 hover:bg-gray-300/80"
                 }`}
               >
-                <FiMail className="mr-2" />
+                <FiLinkedin className="mr-2" />
                 Get In Touch
-              </Link>
+              </a>
             </motion.div>
 
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
